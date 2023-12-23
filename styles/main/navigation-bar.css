@@ -1,0 +1,47 @@
+header > nav {
+  height: auto;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border: 1px black solid;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+header > nav > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+header > nav > ul > li {
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+}
+
+header > nav > ul > li > img {
+  margin: 0;
+  object-fit: contain;
+  background-position: center;
+  width: 4rem;
+  height: 4rem;
+}
+
+header > nav > ul > li > a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding-inline: 1.5rem;
+  color: #000;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  /* border: 1px black solid; */
+}
