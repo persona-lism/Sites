@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/main/navigation-bar.css" />
     <link rel="stylesheet" href="styles/main/body.css" />
+    <link rel="stylesheet" href="styles/main/dropdown-button.css" />
   </head>
   <body>
     <header>
@@ -12,7 +13,18 @@
           <li><img src="assets/svg/github-mark.svg" /></li>
           <li><a href="/index.html">Home</a></li>
           <li><a href="/about">About</a></li>
-          <li><a href="/comingsoon">Coming Soon</a></li>
+          <li>
+            <div class="dropdown-button">
+              <button>Dropdown</button>
+              <div class="dropdown-content">
+                <ul>
+                  <li><a href="/">First</a></li>
+                  <li><a href="/">Second</a></li>
+                  <li><a href="/">Third</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
         </ul>
       </nav>
     </header>

@@ -23,7 +23,7 @@ header > nav > ul > li {
 }
 
 header > nav > ul > li > img {
-  margin: 0;
+  margin: auto;
   object-fit: contain;
   background-position: center;
   width: 4rem;
@@ -44,4 +44,5 @@ header > nav > ul > li > a {
 
 * {
   /* border: 1px black solid; */
+  font-family: "Times New Roman", Times, serif;
 }
