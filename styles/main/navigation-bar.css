@@ -1,3 +1,23 @@
+:root {
+  --navigation-main-color: pink; /* Navigation Bar Background */
+  --navigation-hyperlink-color: #000; /* Navigation Bar Hyperlink */
+  --navigation-hyperlink-underline-color: #222; /* Navigation Bar Hyperlink Underline */
+  /*  */
+  /*  */
+  /*  */
+}
+
+@media screen and (max-width: 1200px) {
+  header > nav > ul > li > img,
+  header > nav > ul > li > a,
+  .dropdown-button,
+  header > nav > ul > li:nth-child(2),
+  header > nav > ul > li:nth-child(3) {
+    display: none;
+    background: red;
+  }
+}
+
 header > nav {
   height: auto;
   width: 100%;
@@ -5,6 +25,8 @@ header > nav {
   top: 0;
   border: 1px black solid;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  background-color: var(--navigation-main-color);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 header > nav > ul {
@@ -14,6 +36,7 @@ header > nav > ul {
   gap: 2rem;
   padding: 0;
   margin: 0;
+  /* justify-content: center; */
 }
 
 header > nav > ul > li {
@@ -34,12 +57,30 @@ header > nav > ul > li > a {
   text-decoration: none;
   font-size: 1.5rem;
   padding-inline: 1.5rem;
-  color: #000;
+  color: var(--navigation-hyperlink-color);
   height: 100%;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+header > nav > ul > li > a:after {
+  bottom: 1px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--navigation-hyperlink-underline-color);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+header > nav > ul > li a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 * {

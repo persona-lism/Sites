@@ -1,3 +1,13 @@
+:root {
+  --dropdown-button-text-color: #000;
+  --dropdown-content-color: #222;
+  --dropdown-content-hyperlink-color: #fff;
+  --dropdown-content-hyperlink-hover-color: #222;
+  --dropdown-content-hyperlink-bg-hover-color: #fff;
+  --dropdown-button-text-hover-color: #fff;
+  --dropdown-button-hover-color: #333;
+}
+
 .dropdown-button {
   position: relative;
 }
@@ -10,16 +20,17 @@
   background-color: transparent;
   height: 100%;
   margin: auto;
-  color: #000;
+  color: var(--dropdown-button-text-color);
   transition: 0.4s ease;
   cursor: pointer;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #222;
-  padding: 1rem 1.5rem;
+  background-color: var(--dropdown-content-color);
+  padding: 0;
   z-index: 1;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
   animation: fadeIn 0.4s 1;
@@ -50,15 +61,25 @@
 .dropdown-content > ul > li > a {
   text-decoration: none;
   font-size: 1.2rem;
-  padding-inline: 1.5rem;
+  padding: 1rem 4rem 1rem 2rem;
   margin: 0;
-  color: #fff;
+  color: var(--dropdown-content-hyperlink-color);
   width: 100%;
+  transition: 0.5s ease-out;
+  border: 1px transparent solid;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown-content > ul > li > a:hover {
+  color: var(--dropdown-content-hyperlink-hover-color);
+  background-color: var(--dropdown-content-hyperlink-bg-hover-color);
+  border: 1px black solid;
+  text-shadow: none;
 }
 
 .dropdown-button:hover > button {
-  background-color: #333;
-  color: white;
+  background-color: var(--dropdown-button-text-hover-color);
+  color: var(--dropdown-button-hover-color);
 }
 
 .dropdown-button:hover > .dropdown-content {

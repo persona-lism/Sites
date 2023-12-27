@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="styles/main/navigation-bar.css" />
     <link rel="stylesheet" href="styles/main/body.css" />
     <link rel="stylesheet" href="styles/main/dropdown-button.css" />
+    <link rel="stylesheet" href="styles/main/hamburger-menu.css" />
   </head>
   <body>
     <header>
@@ -15,7 +16,7 @@
           <li><a href="/about">About</a></li>
           <li>
             <div class="dropdown-button">
-              <button>Dropdown</button>
+              <button>Dropdown <i class="fa-solid fa-caret-down"></i></button>
               <div class="dropdown-content">
                 <ul>
                   <li><a href="/">First</a></li>
@@ -25,10 +26,37 @@
               </div>
             </div>
           </li>
+          <li>
+            <div class="hamburger-menu">
+              <input
+                type="checkbox"
+                id="menu"
+                name="menu"
+                class="menu_checkbox"
+              />
+              <label class="menu_toggle" for="menu">
+                <i class="fa-solid fa-bars"></i>
+              </label>
+              <label class="menu_overlay" for="menu"></label>
+              <!--  -->
+              <div class="hamburger-content">
+                <div class="hamburger-content-header">
+                  <label class="menu_toggle__close" for="menu">
+                    <i class="fa-solid fa-bars"></i>
+                  </label>
+                  <span>Menu</span>
+                </div>
+              </div>
+            </div>
+          </li>
         </ul>
       </nav>
     </header>
     <main></main>
     <footer></footer>
   </body>
+  <script
+    src="https://kit.fontawesome.com/2e9ce271b4.js"
+    crossorigin="anonymous"
+  ></script>
 </html>

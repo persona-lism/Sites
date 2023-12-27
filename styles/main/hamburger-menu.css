@@ -1,0 +1,82 @@
+* {
+  /* border: 1px black solid; */
+}
+
+.hamburger-menu {
+  /* position: relative; */
+  display: flex;
+}
+
+.hamburger-menu > .menu_checkbox {
+  display: none;
+}
+
+.hamburger-menu > .menu_toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.hamburger-menu > .menu_toggle > i {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.hamburger-menu > .menu_overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  bottom: 0;
+  z-index: 2;
+  display: none;
+}
+
+.hamburger-menu > .menu_checkbox:checked ~ .menu_overlay {
+  display: block;
+}
+
+.hamburger-menu > .hamburger-content {
+  left: -300px;
+  top: 0;
+  position: absolute;
+  transition: 0.5s ease;
+  background-color: red;
+  width: 300px;
+  height: 100%;
+  z-index: 3;
+}
+
+.hamburger-menu > .menu_checkbox:checked ~ .hamburger-content {
+  left: 0;
+}
+
+/*  */
+
+.hamburger-content > .hamburger-content-header {
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.hamburger-content > .hamburger-content-header > span {
+  font-size: 2rem;
+  color: white;
+}
+
+.hamburger-content > .hamburger-content-header > .menu_toggle__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.hamburger-content > .hamburger-content-header > .menu_toggle__close > i {
+  font-size: 2rem;
+  text-align: center;
+}
