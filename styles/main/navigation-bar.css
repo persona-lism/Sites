@@ -1,13 +1,13 @@
 :root {
   --navigation-main-color: pink; /* Navigation Bar Background */
-  --navigation-hyperlink-color: #000; /* Navigation Bar Hyperlink */
+  --navigation-hyperlink-color: white; /* Navigation Bar Hyperlink */
   --navigation-hyperlink-underline-color: #222; /* Navigation Bar Hyperlink Underline */
   /*  */
   /*  */
   /*  */
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   header > nav > ul > li > img,
   header > nav > ul > li > a,
   .dropdown-button,
@@ -23,10 +23,10 @@ header > nav {
   width: 100%;
   left: 0;
   top: 0;
-  border: 1px black solid;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
   background-color: var(--navigation-main-color);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  height: 64px;
 }
 
 header > nav > ul {
@@ -36,6 +36,7 @@ header > nav > ul {
   gap: 2rem;
   padding: 0;
   margin: 0;
+  height: 100%;
   /* justify-content: center; */
 }
 

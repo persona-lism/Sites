@@ -1,5 +1,5 @@
 :root {
-  --dropdown-button-text-color: #000;
+  /* --dropdown-button-text-color: #000; */
   --dropdown-content-color: #222;
   --dropdown-content-hyperlink-color: #fff;
   --dropdown-content-hyperlink-hover-color: #222;
@@ -20,7 +20,7 @@
   background-color: transparent;
   height: 100%;
   margin: auto;
-  color: var(--dropdown-button-text-color);
+  color: var(--navigation-hyperlink-color);
   transition: 0.4s ease;
   cursor: pointer;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
