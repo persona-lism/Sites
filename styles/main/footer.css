@@ -1,5 +1,7 @@
 :root {
   --footer-text-color: #fff;
+  --footer-social-hover-color: palevioletred;
+  --footer-menu-hover-color: rebeccapurple;
 }
 
 footer {
@@ -90,7 +92,7 @@ footer {
 .footer-social > li {
   display: flex;
   flex-direction: row;
-  transition: 0.5s ease-in-out;
+  transition: 0.5s ease;
   cursor: pointer;
 }
 
@@ -101,7 +103,7 @@ footer {
 
 .footer-social > li:hover {
   margin-top: -2rem;
-  color: palevioletred;
+  color: var(--footer-social-hover-color);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
 
@@ -120,13 +122,13 @@ footer {
 .footer-menu > li {
   display: flex;
   flex-direction: row;
-  transition: 0.5s ease-in-out;
+  transition: 0.4s ease-in-out;
   cursor: pointer;
   font-size: 2rem;
 }
 
 .footer-menu > li:hover {
-  color: rebeccapurple;
+  color: var(--footer-menu-hover-color);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
 

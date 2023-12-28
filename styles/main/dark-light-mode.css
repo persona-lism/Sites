@@ -1,0 +1,150 @@
+.dark-light-switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.dark-light-switch > input {
+  opacity: 0;
+  position: absolute;
+}
+
+/*  */
+
+.dark-light-switch
+  > input:checked
+  + .switch_toggle
+  > .mask-toggle
+  > .icon-wrap:nth-child(1) {
+  transform: translateY(100px);
+  transition: 0.4s;
+}
+
+.dark-light-switch
+  > input:not(:checked)
+  + .switch_toggle
+  > .mask-toggle
+  > .icon-wrap:nth-child(1) {
+  transform: translateY(0%);
+  transition: 0.4s;
+}
+
+.dark-light-switch
+  > input:checked
+  + .switch_toggle
+  > .mask-toggle
+  > .icon-wrap:nth-child(2) {
+  transform: translateY(0%);
+  transition: 0.4s;
+}
+
+.dark-light-switch
+  > input:not(:checked)
+  + .switch_toggle
+  > .mask-toggle
+  > .icon-wrap:nth-child(2) {
+  transform: translateY(100px);
+  transition: 0.4s;
+}
+
+/*  */
+
+.dark-light-switch
+  > input:checked
+  + .switch_toggle
+  > .mask-toggle
+  > .icon-wrap
+  > .sun-icon {
+  opacity: 0;
+  transition: 0.4s;
+  z-index: -999;
+}
+
+.dark-light-switch
+  > input:not(:checked)
+  + .switch_toggle
+  > .mask-toggle
+  > .icon-wrap
+  > .sun-icon {
+  transition: 0.4s;
+  color: #d4d4dc;
+}
+
+.dark-light-switch
+  > input:checked
+  + .switch_toggle
+  > .mask-toggle
+  > .icon-wrap
+  > .moon-icon {
+  color: #ffd400;
+  transition: 0.4s;
+}
+
+.dark-light-switch
+  > input:not(:checked)
+  + .switch_toggle
+  > .mask-toggle
+  > .icon-wrap
+  > .moon-icon {
+  color: #fff;
+  opacity: 0;
+  transition: 0.4s;
+  z-index: -999;
+}
+/*  */
+
+.dark-light-switch > .switch_toggle {
+  width: fit-content;
+  height: fit-content;
+  z-index: 0;
+}
+
+.dark-light-switch > .switch_toggle > .mask-toggle {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+}
+
+.dark-light-switch > .switch_toggle > .mask-toggle > .switch-line {
+  height: 5px;
+  background-color: #fff;
+  width: 48px;
+  position: absolute;
+  top: 1.5rem;
+}
+
+.dark-light-switch > .switch_toggle > .mask-toggle > .icon-wrap > .sun-icon {
+  font-size: 2rem;
+  width: 34px;
+  height: 34px;
+}
+
+.dark-light-switch > .switch_toggle > .mask-toggle > .icon-wrap > .moon-icon {
+  font-size: 2rem;
+  width: 34px;
+  height: 34px;
+}
+
+/*  */
+.mask-toggle > .icon-wrap {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+}
+
+.mask-toggle > .icon-wrap > .sun-icon,
+.mask-toggle > .icon-wrap > .moon-icon {
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  padding: 0.5rem;
+  cursor: pointer;
+  /* position: absolute; */
+}
