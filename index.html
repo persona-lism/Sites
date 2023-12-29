@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="styles/main/dark-light-mode.css" />
     <link rel="stylesheet" href="styles/main/progress-bar.css" />
     <link rel="stylesheet" href="styles/pages/index.css" />
-
-    <script type="module" src="scrollFunctions.js"></script>
   </head>
   <body>
     <header>
@@ -139,4 +137,9 @@
   <script src="functions/main/footer.js"></script>
   <script defer src="functions/main/progress-bar.js"></script>
   <script defer src="functions/pages/index.js"></script>
+
+  <!-- Include the scripts in the correct order -->
+  <script type="module" src="functions/main/footer.js"></script>
+  <script type="module" src="functions/pages/index.js"></script>
+  <script type="module" src="functions/main/scrollFunctions.js"></script>
 </html>

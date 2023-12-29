@@ -1,4 +1,6 @@
-function handleFooterScroll() {
+// footer.js
+
+export function handleFooterScroll() {
   var footers = document.querySelectorAll("footer");
 
   footers.forEach((foo) => {
@@ -12,9 +14,3 @@ function handleFooterScroll() {
     }
   });
 }
-
-// Attach each function to the scroll event separately
-window.onscroll = function () {
-  handleFooterScroll();
-  handleSectionScroll();
-};

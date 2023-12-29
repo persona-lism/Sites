@@ -1,4 +1,6 @@
-function handleSectionScroll() {
+// index.js
+
+export function handleSectionScroll() {
   var sections = document.querySelectorAll("section");
 
   sections.forEach((sec) => {
@@ -12,9 +14,3 @@ function handleSectionScroll() {
     }
   });
 }
-
-// Attach each function to the scroll event separately
-window.onscroll = function () {
-  handleFooterScroll();
-  handleSectionScroll();
-};
