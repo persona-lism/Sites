@@ -144,3 +144,21 @@
   cursor: pointer;
   /* position: absolute; */
 }
+
+/* SECTION => .dark-mode */
+/* Section 1 - <body> (ID: bodies) */
+#bodies.dark-mode {
+  background: linear-gradient(to right, red, green, blue);
+  background-size: 200% 100%;
+  transition: 2s ease;
+}
+
+/* Section 2 - <nav> (ID: navigation-bar) */
+#navigation-bar.dark-mode {
+  background-color: #222;
+}
+
+/* Section 3 - <div> (ID: progress-bar) */
+#progress-bar.dark-mode {
+  background-color: springgreen;
+}

@@ -9,6 +9,7 @@ body {
   background: linear-gradient(to right, #1f242d, rgb(58, 66, 81), #3f4653);
   background-size: 200% 100%;
   animation: gradientAnimation 10s linear infinite;
+  transition: 2s ease;
 }
 
 @keyframes gradientAnimation {
