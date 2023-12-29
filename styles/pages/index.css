@@ -1,0 +1,71 @@
+body > main > section {
+  overflow-x: hidden;
+}
+
+/* First Section */
+body > main > .first-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #1f242d, #3f4653);
+  min-height: 100vh;
+}
+
+.first-section > h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.first-section > p {
+  color: #0ef;
+}
+
+/* Second Section */
+body > main > .second-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Third Section */
+body > main > .third-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  border: 1px black solid;
+}
+
+/* Animate On Scroll */
+section .animateOnScroll {
+  transition: 1s;
+}
+
+.first-section .animateOnScroll {
+  transform: translateX(-100%);
+}
+
+.first-section.show-animateOnScroll .animateOnScroll {
+  transform: translateX(0);
+}
+
+.second-section .animateOnScroll {
+  transform: translateX(100%);
+}
+
+.second-section.show-animateOnScroll .animateOnScroll {
+  transform: translateX(0);
+}
+
+.third-section .animateOnScroll {
+  transform: translateY(100%);
+}
+
+.third-section.show-animateOnScroll .animateOnScroll {
+  transform: translateY(0);
+}
