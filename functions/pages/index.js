@@ -5,7 +5,7 @@ export function handleSectionScroll() {
 
   sections.forEach((sec) => {
     var top = window.scrollY;
-    var offset = sec.offsetTop - 150;
+    var offset = sec.offsetTop - 250;
     var height = sec.offsetHeight;
     if (top >= offset && top < offset + height) {
       sec.classList.add("show-animateOnScroll");

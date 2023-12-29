@@ -10,7 +10,7 @@ body > main > .first-section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #1f242d, #3f4653);
+  /* background: linear-gradient(to right, #1f242d, #3f4653); */
   min-height: 100vh;
 }
 
@@ -31,9 +31,9 @@ body > main > .second-section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #1f242d, #3f4653);
+  /* background: linear-gradient(to right, #1f242d, #3f4653); */
   min-height: 100vh;
-  padding: 2rem 4rem;
+  padding: 2rem 24rem;
   text-align: center;
 }
 
@@ -54,7 +54,7 @@ body > main > .third-section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #1f242d, #3f4653);
+  /* background: linear-gradient(to right, #1f242d, #3f4653); */
   min-height: 100vh;
 }
 
@@ -85,6 +85,19 @@ section .animateOnScroll {
   opacity: 1;
 }
 
+.first-section .pictureAnimate {
+  top: 120%;
+  right: 10%;
+  opacity: 1;
+  transition: 2s;
+}
+
+.first-section.show-animateOnScroll .pictureAnimate {
+  top: 0;
+  right: 70%;
+  opacity: 0;
+}
+
 /* Second Section Animation */
 .second-section .animateOnScroll {
   transform: translateX(100%);
@@ -94,6 +107,20 @@ section .animateOnScroll {
 .second-section.show-animateOnScroll .animateOnScroll {
   transform: translateX(0);
   opacity: 1;
+}
+
+.second-section .pictureAnimate {
+  top: 0;
+  left: 50%;
+  transition: 2s;
+  /* opacity: 0; */
+}
+
+.second-section.show-animateOnScroll .pictureAnimate {
+  top: 130%;
+  left: 0%;
+  /* opacity: 1; */
+  animation: opacity 3s 1, rotate_second 2s 1;
 }
 
 /* Third Section Animation */
@@ -109,41 +136,117 @@ section .animateOnScroll {
 
 /* Image */
 .first-section > .picture {
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 1 / 1;
   width: 250px;
-  left: 12%;
-  top: 80%;
   position: absolute;
   transform: rotate(30deg);
-  animation: rotate_first 8s infinite;
-  background: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703815200&semt=sph);
+  animation: rotate_first 5s infinite;
+  background: url("https://e1.pxfuel.com/desktop-wallpaper/821/219/desktop-wallpaper-katagiri-yuuichi-icons-yuuichi.jpg");
+  background-size: contain;
+  object-fit: contain;
+  background-position: center;
 }
 
 @keyframes rotate_first {
-  0%,
-  100% {
-    transform: rotate(40deg);
-    background: url(https://th.bing.com/th/id/R.cde34f35b726362c0794705aa5c2dd04?rik=cVER3o5P0BBuDA&pid=ImgRaw&r=0);
+  0% {
+    transform: rotate(0) rotateY(90deg);
   }
-  10%,
-  80% {
-    transform: rotate(35deg);
+  10% {
+    transform: rotate(45deg);
   }
-  20%,
-  90% {
-    transform: rotate(20deg);
+  20% {
+    transform: rotate(-30deg);
+    filter: brightness(1);
   }
-  30%,
-  70% {
-    transform: rotate(15deg);
+  30% {
+    transform: rotate(30deg);
   }
-  40%,
-  60% {
-    transform: rotate(-5deg);
-    background: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703815200&semt=sph");
+  40% {
+    transform: rotate(-15deg);
+    filter: brightness(1);
   }
   50% {
+    transform: rotate(15deg) rotateY(90deg);
+    filter: brightness(0.1);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  70% {
     transform: rotate(10deg);
+    filter: brightness(1);
+  }
+  80% {
+    transform: rotate(0);
+  }
+  90% {
+    transform: rotate(15deg);
+    filter: brightness(1);
+  }
+  100% {
+    transform: rotate(0) rotateY(90deg);
+    filter: brightness(0.1);
+  }
+
+  0%,
+  50% {
+    background: url("https://i.pinimg.com/originals/96/91/28/9691288a3fadba6a8e6173d4eea20488.jpg");
+    background-size: contain;
+    object-fit: contain;
+    background-position: center;
+  }
+
+  51%,
+  100% {
+    background: url("https://e1.pxfuel.com/desktop-wallpaper/821/219/desktop-wallpaper-katagiri-yuuichi-icons-yuuichi.jpg");
+    background-size: contain;
+    object-fit: contain;
+    background-position: center;
+  }
+
+  0%,
+  100% {
+    border: 4px red solid;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+  }
+  33% {
+    border: 4px blue solid;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+  }
+  66% {
+    border: 4px green solid;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@keyframes rotate_second {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(390deg);
+  }
+}
+
+.second-section > .picture {
+  opacity: 0;
+  aspect-ratio: 3 / 4;
+  width: 300px;
+  position: absolute;
+  transform: rotate(30deg);
+  background: url("https://www.anime-planet.com/images/characters/delta-kage-no-jitsuryokusha-ni-naritakute-164042.jpg");
+  background-size: contain;
+  object-fit: contain;
+  background-position: center;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes opacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 
