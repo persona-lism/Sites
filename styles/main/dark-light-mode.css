@@ -148,17 +148,31 @@
 /* SECTION => .dark-mode */
 /* Section 1 - <body> (ID: bodies) */
 #bodies.dark-mode {
-  background: linear-gradient(to right, red, green, blue);
-  background-size: 200% 100%;
+  /* background: linear-gradient(to right, #1f242d, #343b48, #1f242d, #343b48); */
+  background: linear-gradient(to bottom, #020111, #3a3a52, #020111, #3a3a52);
+  background-size: 100% 300%;
   transition: 2s ease;
 }
+/*  */
+#bodies.dark-mode .first-section > h1,
+#bodies.dark-mode .second-section > h1,
+#bodies.dark-mode .third-section > h1 {
+  color: #fff;
+}
+
+#bodies.dark-mode .first-section > p,
+#bodies.dark-mode .second-section > p,
+#bodies.dark-mode .third-section > p {
+  color: #0ef;
+}
+/*  */
 
 /* Section 2 - <nav> (ID: navigation-bar) */
 #navigation-bar.dark-mode {
-  background-color: #222;
+  background-color: #333;
 }
 
 /* Section 3 - <div> (ID: progress-bar) */
 #progress-bar.dark-mode {
-  background-color: springgreen;
+  background-color: rebeccapurple;
 }

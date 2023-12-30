@@ -1,0 +1,16 @@
+/* Navigation Bar */
+header > nav > ul {
+  gap: 2rem;
+  justify-content: space-between;
+  padding-inline: 3rem;
+  flex-direction: row-reverse;
+}
+
+header > nav > ul > li:nth-child(-n + 4):not(:first-child) {
+  display: none;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: flex;
+}

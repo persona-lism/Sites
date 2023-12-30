@@ -1,7 +1,7 @@
 body > main > section {
   overflow-x: hidden;
   /* border: 1px black solid; */
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* First Section */
@@ -15,13 +15,13 @@ body > main > .first-section {
 }
 
 .first-section > h1 {
-  color: #fff;
+  color: #23272a;
   font-size: 4rem;
   margin: 0;
 }
 
 .first-section > p {
-  color: #0ef;
+  color: #23272a;
   font-size: 1.5rem;
 }
 
@@ -38,13 +38,13 @@ body > main > .second-section {
 }
 
 .second-section > h1 {
-  color: #fff;
+  color: #23272a;
   font-size: 4rem;
   margin: 0;
 }
 
 .second-section > p {
-  color: #0ef;
+  color: #23272a;
   font-size: 1.5rem;
 }
 
@@ -59,13 +59,13 @@ body > main > .third-section {
 }
 
 .third-section > h1 {
-  color: #fff;
+  color: #23272a;
   font-size: 4rem;
   margin: 0;
 }
 
 .third-section > p {
-  color: #0ef;
+  color: #23272a;
   font-size: 1.5rem;
 }
 
@@ -111,7 +111,7 @@ section .animateOnScroll {
 
 .second-section .pictureAnimate {
   top: 0;
-  left: 50%;
+  left: 40%;
   transition: 2s;
   /* opacity: 0; */
 }
@@ -141,7 +141,7 @@ section .animateOnScroll {
   position: absolute;
   transform: rotate(30deg);
   animation: rotate_first 5s infinite;
-  background: url("https://e1.pxfuel.com/desktop-wallpaper/821/219/desktop-wallpaper-katagiri-yuuichi-icons-yuuichi.jpg");
+  background: url("https://giffiles.alphacoders.com/213/213921.gif");
   background-size: contain;
   object-fit: contain;
   background-position: center;
@@ -198,7 +198,7 @@ section .animateOnScroll {
 
   51%,
   100% {
-    background: url("https://e1.pxfuel.com/desktop-wallpaper/821/219/desktop-wallpaper-katagiri-yuuichi-icons-yuuichi.jpg");
+    background: url("https://giffiles.alphacoders.com/213/213921.gif");
     background-size: contain;
     object-fit: contain;
     background-position: center;
@@ -271,7 +271,7 @@ section .animateOnScroll {
   height: 100%;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
   padding: 1.5rem 2rem 6rem 2rem;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   background: linear-gradient(to top, #1f242d, #3f4653);
 }
 
