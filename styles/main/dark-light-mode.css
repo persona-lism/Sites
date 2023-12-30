@@ -146,6 +146,9 @@
 }
 
 /* SECTION => .dark-mode */
+#dropdown.dark-mode .dropdown-content {
+  background-color: #222344;
+}
 /* Section 1 - <body> (ID: bodies) */
 #bodies.dark-mode {
   /* background: linear-gradient(to right, #1f242d, #343b48, #1f242d, #343b48); */
@@ -175,4 +178,8 @@
 /* Section 3 - <div> (ID: progress-bar) */
 #progress-bar.dark-mode {
   background-color: rebeccapurple;
+}
+#third-section.dark-mode .third-section-description-strength,
+#third-section.dark-mode .third-section-description-weakness {
+  background: linear-gradient(to bottom, #020111, #3a3a52);
 }

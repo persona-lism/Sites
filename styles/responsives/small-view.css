@@ -29,7 +29,7 @@ header > nav > ul > li:nth-child(-n + 4):not(:first-child) {
 }
 
 body > main > .second-section {
-  padding: 1rem 12rem;
+  padding: 1rem 6rem;
 }
 
 .first-section > .picture,

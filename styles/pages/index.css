@@ -33,7 +33,7 @@ body > main > .second-section {
   align-items: center;
   /* background: linear-gradient(to right, #1f242d, #3f4653); */
   min-height: 100vh;
-  padding: 2rem 24rem;
+  padding: 2rem 12rem;
   text-align: center;
 }
 

@@ -1,9 +1,9 @@
 :root {
   /* --dropdown-button-text-color: #000; */
-  --dropdown-content-color: #222;
+  --dropdown-content-color: royalblue;
   --dropdown-content-hyperlink-color: #fff;
   --dropdown-content-hyperlink-hover-color: #222;
-  --dropdown-content-hyperlink-bg-hover-color: #fff;
+  --dropdown-content-hyperlink-bg-hover-color: rebeccapurple;
   --dropdown-button-text-hover-color: #fff;
   --dropdown-button-hover-color: #333;
 }
