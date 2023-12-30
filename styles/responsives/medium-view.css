@@ -2,3 +2,87 @@
 .hamburger-menu {
   display: none;
 }
+
+/* index.html */
+.first-section > h1,
+.second-section > h1,
+.third-section > h1 {
+  font-size: 3.2rem;
+}
+
+.first-section > p,
+.second-section > p,
+.third-section > p {
+  font-size: 1.4rem;
+}
+
+body > main > .second-section {
+  padding: 1rem 12rem;
+}
+
+.first-section > .picture,
+.second-section > .picture {
+  width: 175px;
+}
+
+.third-section-description {
+  width: 70%;
+  column-gap: 1rem;
+  margin-top: 1rem;
+}
+
+.third-section-description-strength,
+.third-section-description-weakness {
+  padding: 1rem 1.5rem 4rem 1.5rem;
+}
+
+.third-section-description-strength > p:first-child,
+.third-section-description-weakness > p:first-child {
+  font-size: 1.5rem;
+}
+
+.third-section-description-strength > ul,
+.third-section-description-weakness > ul {
+  font-size: 1rem;
+  margin: 0.8rem 0 0 0;
+}
+
+.third-section-description-strength > ul > li,
+.third-section-description-weakness > ul > li {
+  margin: 0.3rem 0;
+}
+
+/* Footer */
+footer {
+  margin-top: 4rem;
+  padding: 5rem 1.5rem;
+}
+
+.footer-social {
+  gap: 1.5rem;
+}
+
+.footer-social > li > i {
+  font-size: 2.5rem;
+}
+
+.footer-social > li:hover {
+  margin-top: -1.5rem;
+}
+
+.footer-menu {
+  gap: 1.5rem;
+}
+
+.footer-menu > li {
+  font-size: 1.5rem;
+}
+
+footer > p {
+  font-size: 1.1rem;
+  margin-top: 0.8rem;
+}
+
+footer {
+  height: 40vh;
+}
