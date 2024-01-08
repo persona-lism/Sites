@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (dropdown.classList.contains("expand-1")) {
       content.style.animation = "fadeIn 0.4s";
-      content.style.display = "flex";
+      content.style.display = "grid";
       setTimeout(() => {
         content.style.opacity = "1";
       }, 100);
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (dropdown.classList.contains("expand-2")) {
       content.style.animation = "fadeIn 0.4s";
-      content.style.display = "flex";
+      content.style.display = "grid";
       setTimeout(() => {
         content.style.opacity = "1";
       }, 100);
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (dropdown.classList.contains("expand-3")) {
       content.style.animation = "fadeIn 0.4s";
-      content.style.display = "flex";
+      content.style.display = "grid";
       setTimeout(() => {
         content.style.opacity = "1";
       }, 100);
@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (dropdown.classList.contains("expand-4")) {
       content.style.animation = "fadeIn 0.4s";
-      content.style.display = "flex";
+      content.style.display = "grid";
       setTimeout(() => {
         content.style.opacity = "1";
       }, 100);
@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (dropdown.classList.contains("expand-5")) {
       content.style.animation = "fadeIn 0.4s";
-      content.style.display = "flex";
+      content.style.display = "grid";
       setTimeout(() => {
         content.style.opacity = "1";
       }, 100);
@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (dropdown.classList.contains("expand-6")) {
       content.style.animation = "fadeIn 0.4s";
-      content.style.display = "flex";
+      content.style.display = "grid";
       setTimeout(() => {
         content.style.opacity = "1";
       }, 100);
@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (dropdown.classList.contains("expand-7")) {
       content.style.animation = "fadeIn 0.4s";
-      content.style.display = "flex";
+      content.style.display = "grid";
       setTimeout(() => {
         content.style.opacity = "1";
       }, 100);
@@ -193,7 +193,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (dropdown.classList.contains("expand-8")) {
       content.style.animation = "fadeIn 0.4s";
-      content.style.display = "flex";
+      content.style.display = "grid";
       setTimeout(() => {
         content.style.opacity = "1";
       }, 100);
@@ -214,7 +214,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (dropdown.classList.contains("expand-9")) {
       content.style.animation = "fadeIn 0.4s";
-      content.style.display = "flex";
+      content.style.display = "grid";
       setTimeout(() => {
         content.style.opacity = "1";
       }, 100);
@@ -235,7 +235,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (dropdown.classList.contains("expand-10")) {
       content.style.animation = "fadeIn 0.4s";
-      content.style.display = "flex";
+      content.style.display = "grid";
       setTimeout(() => {
         content.style.opacity = "1";
       }, 100);
@@ -256,7 +256,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (dropdown.classList.contains("expand-11")) {
       content.style.animation = "fadeIn 0.4s";
-      content.style.display = "flex";
+      content.style.display = "grid";
       setTimeout(() => {
         content.style.opacity = "1";
       }, 100);
@@ -277,7 +277,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (dropdown.classList.contains("expand-12")) {
       content.style.animation = "fadeIn 0.4s";
-      content.style.display = "flex";
+      content.style.display = "grid";
       setTimeout(() => {
         content.style.opacity = "1";
       }, 100);
@@ -298,7 +298,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (dropdown.classList.contains("expand-13")) {
       content.style.animation = "fadeIn 0.4s";
-      content.style.display = "flex";
+      content.style.display = "grid";
       setTimeout(() => {
         content.style.opacity = "1";
       }, 100);
@@ -319,7 +319,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (dropdown.classList.contains("expand-14")) {
       content.style.animation = "fadeIn 0.4s";
-      content.style.display = "flex";
+      content.style.display = "grid";
       setTimeout(() => {
         content.style.opacity = "1";
       }, 100);
@@ -340,7 +340,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (dropdown.classList.contains("expand-15")) {
       content.style.animation = "fadeIn 0.4s";
-      content.style.display = "flex";
+      content.style.display = "grid";
       setTimeout(() => {
         content.style.opacity = "1";
       }, 100);
@@ -361,7 +361,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (dropdown.classList.contains("expand-16")) {
       content.style.animation = "fadeIn 0.4s";
-      content.style.display = "flex";
+      content.style.display = "grid";
       setTimeout(() => {
         content.style.opacity = "1";
       }, 100);

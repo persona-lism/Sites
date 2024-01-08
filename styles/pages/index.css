@@ -253,7 +253,7 @@ section .animateOnScroll {
 /* Third Section Description - Strength & Weakness */
 .third-section-description {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
   margin-top: 1.5rem;
   justify-content: center;
   align-items: center;
