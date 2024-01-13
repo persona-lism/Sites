@@ -18,7 +18,7 @@
 }
 
 .wrapper {
-  background-color: white;
+  background-color: #2d325a;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
   border-radius: 1rem;
   margin: 0;
@@ -31,6 +31,8 @@
   margin: 1rem 0;
   padding-inline: 2rem;
   font-size: 2rem;
+  color: #fff;
+  font-weight: 800;
 }
 
 .grid-container {
@@ -44,11 +46,11 @@
 }
 
 .grid-container-child:nth-child(odd) {
-  color: #222;
+  color: #fff;
 }
 
 .grid-container-child:nth-child(even) {
-  color: #222;
+  color: #fff;
 }
 
 .grid-container-child > span {
@@ -74,6 +76,7 @@
 
 .grid-container-child > .grid-content-description > h1 {
   margin: 0;
+  font-weight: 400;
 }
 
 .grid-container-child > .grid-content-description > p {
@@ -91,12 +94,19 @@
 }
 
 /* Kelas 10 */
-.grid-container-child > .grid-content img {
+.grid-container-child > .grid-content img,
+.grid-container-child > .grid-content iframe {
   width: 100%;
   max-width: 400px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
   border: 1px black solid;
   margin: 0 auto;
+  height: auto;
+}
+
+.grid-container-child > .grid-content iframe {
+  aspect-ratio: 3 / 4;
+  background-color: #fff;
 }
 
 .sub-description {
@@ -110,4 +120,8 @@
 .sub-description > p {
   margin: 0.5rem auto;
   font-size: 1.2rem;
+}
+
+.sub-description > p > a {
+  color: beige;
 }

@@ -11,6 +11,7 @@ body {
   background-size: 100% 300%;
   animation: gradientAnimation 15s infinite linear;
   transition: 2s ease;
+  overflow-x: hidden;
 }
 
 @keyframes gradientAnimation {
