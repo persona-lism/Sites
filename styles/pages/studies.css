@@ -94,8 +94,7 @@
 }
 
 /* Kelas 10 */
-.grid-container-child > .grid-content img,
-.grid-container-child > .grid-content iframe {
+.grid-container-child > .grid-content img {
   width: 100%;
   max-width: 400px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
@@ -105,8 +104,9 @@
 }
 
 .grid-container-child > .grid-content iframe {
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 4 / 3;
   background-color: #fff;
+  width: 100%;
 }
 
 .sub-description {
