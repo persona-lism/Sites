@@ -18,7 +18,8 @@
 }
 
 .wrapper {
-  background-color: #2d325a;
+  /* background-color: #2d325a; */
+  background: linear-gradient(to top, #314466, rgb(69, 98, 155));
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
   border-radius: 1rem;
   margin: 0;
