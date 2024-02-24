@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body > main > section {
   overflow-x: hidden;
   /* border: 1px black solid; */
@@ -207,7 +211,7 @@ section .animateOnScroll {
   0%,
   100% {
     border: 4px red solid;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+    box-shadow: 4px 4px 4px rgba(0, 0%, 0%, 0.6);
   }
   33% {
     border: 4px blue solid;

@@ -1,1282 +1,1958 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/main/navigation-bar.css" />
-    <link rel="stylesheet" href="../styles/main/body.css" />
-    <link rel="stylesheet" href="../styles/main/dropdown-button.css" />
-    <link rel="stylesheet" href="../styles/main/hamburger-menu.css" />
-    <link rel="stylesheet" href="../styles/main/footer.css" />
-    <link rel="stylesheet" href="../styles/main/dark-light-mode.css" />
-    <link rel="stylesheet" href="../styles/main/progress-bar.css" />
-    <link rel="stylesheet" href="../styles/pages/studies.css" />
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../styles/main/navigation-bar.css" />
+		<link rel="stylesheet" href="../styles/main/body.css" />
+		<link rel="stylesheet" href="../styles/main/dropdown-button.css" />
+		<link rel="stylesheet" href="../styles/main/hamburger-menu.css" />
+		<link rel="stylesheet" href="../styles/main/footer.css" />
+		<link rel="stylesheet" href="../styles/main/dark-light-mode.css" />
+		<link rel="stylesheet" href="../styles/main/progress-bar.css" />
+		<link rel="stylesheet" href="../styles/pages/studies.css" />
 
-    <!-- Responsives -->
-    <link
-      rel="stylesheet"
-      href="../styles/responsives/large-view.css"
-      media="screen and (min-width: 993px) and (max-width: 1024px)"
-    />
-    <link
-      rel="stylesheet"
-      href="../styles/responsives/medium-view.css"
-      media="screen and (min-width: 769px) and (max-width: 992px)"
-    />
-    <link
-      rel="stylesheet"
-      href="../styles/responsives/small-view.css"
-      media="screen and (min-width: 601px) and (max-width: 768px)"
-    />
-    <link
-      rel="stylesheet"
-      href="../styles/responsives/extra-small-view.css"
-      media="screen and (max-width: 600px)"
-    />
-  </head>
-  <body id="bodies">
-    <header>
-      <nav id="navigation-bar">
-        <ul>
-          <li><img src="../assets/svg/github-mark.svg" /></li>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../about">About</a></li>
-          <li>
-            <div class="dropdown-button" id="dropdown">
-              <button>Dropdown <i class="fa-solid fa-caret-down"></i></button>
-              <div class="dropdown-content">
-                <ul>
-                  <li><a href="/">Studies</a></li>
-                  <li><a href="/">Achievements</a></li>
-                  <li><a href="/">References</a></li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="dark-light-switch">
-              <input
-                type="checkbox"
-                id="switch"
-                name="switch"
-                class="switch_toggle"
-              />
-              <label class="switch_toggle" for="switch">
-                <div class="mask-toggle">
-                  <div class="icon-wrap">
-                    <div class="sun-icon">
-                      <i class="fa-solid fa-circle"></i>
-                    </div>
-                  </div>
-                  <div class="icon-wrap">
-                    <div class="moon-icon">
-                      <i class="fa-solid fa-moon"></i>
-                    </div>
-                  </div>
-                  <div class="switch-line"></div>
-                </div>
-              </label>
-            </div>
-          </li>
-          <li>
-            <div class="hamburger-menu">
-              <input
-                type="checkbox"
-                id="menu"
-                name="menu"
-                class="menu_checkbox"
-              />
-              <label class="menu_toggle" for="menu">
-                <i class="fa-solid fa-bars"></i>
-                <!-- <i class="fa-solid fa-burger"></i> -->
-              </label>
-              <label class="menu_overlay" for="menu"></label>
-              <!--  -->
-              <div class="hamburger-content">
-                <div class="hamburger-content-header">
-                  <label class="menu_toggle__close" for="menu">
-                    <i class="fa-solid fa-xmark"></i>
-                  </label>
-                  <span>Hamburger Menu</span>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </nav>
-      <div id="progress">
-        <div id="progress-bar"></div>
-      </div>
-    </header>
-    <main>
-      <section class="first-content">
-        <h1>Kelas 10</h1>
-        <div class="wrapper">
-          <p>Kelompok A (Umum)</p>
-          <div class="grid-container">
-            <!-- Kelas 10 = 16 Mapel -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description-1">
-                <h1>1. Pendidikan Agama Katolik dan Budi Pekerti</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content-1">
-                <div class="sub-description">
-                  <img src="../assets/studies/first-content/agama1.png" />
-                </div>
-              </div>
-            </div>
-            <!--  -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description-2">
-                <h1>2. Pendidikan Pancasila dan Kewarganegaraan</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content-2">
-                <div class="sub-description">
-                  <iframe
-                    src="https://docs.google.com/document/d/e/2PACX-1vRj9ZUjyONOFoxDIFQF4NW877NW51ptVP-sGUiuXhY0xF4a0ejmSn_G-yyd-a31u4U2u8eeng81zpk3/pub?embedded=true"
-                  ></iframe>
-                </div>
-                <div class="sub-description">
-                  <iframe
-                    src="https://docs.google.com/presentation/d/e/2PACX-1vQ3FXPV0y7b6RSCrBMTswwxMlm3nupTUhndPIM_xReak7RsFNPFCk3w7EZwhuQS1cJXtcNYvGmOwB_-/embed?start=true&loop=true&delayms=3000"
-                    frameborder="0"
-                    width="auto"
-                    height="auto"
-                    allowfullscreen="true"
-                    mozallowfullscreen="true"
-                    webkitallowfullscreen="true"
-                  ></iframe>
-                </div>
-                <div class="sub-description">
-                  <iframe
-                    src="https://drive.google.com/file/d/1ubEO1_X-DCXfVWZHMJ71L9RAnFdIdOBV/preview"
-                    width="auto"
-                    height="auto"
-                    allow="autoplay"
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-            <!--  -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description-3">
-                <h1>3. Bahasa Indonesia</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content-3">
-                <div class="sub-description">
-                  <iframe
-                    src="https://docs.google.com/presentation/d/e/2PACX-1vQpMuGTBUQ1DLd3Q91H4qKLQTim7t3zLWe-UV2EK9NBsz23BQ8Odn9arcBwAgVg1_4IwtNPif2nmCy5/embed?start=true&loop=true&delayms=3000"
-                    frameborder="0"
-                    width="auto"
-                    height="auto"
-                    allowfullscreen="true"
-                    mozallowfullscreen="true"
-                    webkitallowfullscreen="true"
-                  ></iframe>
-                </div>
-                <div class="sub-description">
-                  <iframe
-                    src="https://docs.google.com/presentation/d/e/2PACX-1vQyz_1DmblCAVnOeYCQMJGFa2mxZVT4A_EaLKVAeRnGhJatg5P_B5yXA2klIduLe6LuP0z3FmoagF8U/embed?start=true&loop=true&delayms=3000"
-                    frameborder="0"
-                    width="auto"
-                    height="auto"
-                    allowfullscreen="true"
-                    mozallowfullscreen="true"
-                    webkitallowfullscreen="true"
-                  ></iframe>
-                </div>
-                <div class="sub-description">
-                  <iframe
-                    src="https://docs.google.com/presentation/d/e/2PACX-1vR-UlWaXXU2vs9lyyODjml1y9-peVE-UxeXKQIe3S2zzsTu72OPv8zQCvHeGGIyeG68UiRD8H5nw-Jc/embed?start=true&loop=true&delayms=3000"
-                    frameborder="0"
-                    width="auto"
-                    height="auto"
-                    allowfullscreen="true"
-                    mozallowfullscreen="true"
-                    webkitallowfullscreen="true"
-                  ></iframe>
-                </div>
-                <div class="sub-description">
-                  <iframe
-                    src="https://docs.google.com/presentation/d/e/2PACX-1vRIap31zIXwzxEyYdOZrskolPdpn8hyXZoFC_ifTX-6FXZbgDwDrUgREJdzawmpTd1ZGcJAs-O32QL7/embed?start=true&loop=true&delayms=3000"
-                    frameborder="0"
-                    width="auto"
-                    height="auto"
-                    allowfullscreen="true"
-                    mozallowfullscreen="true"
-                    webkitallowfullscreen="true"
-                  ></iframe>
-                </div>
-                <div class="sub-description">
-                  <iframe
-                    src="https://docs.google.com/presentation/d/e/2PACX-1vSdzjNOs4i7qp40Dor_w_RovnqvlpiqASQPNiDYl7sGW_xVCOftf8XH3RXsg7cWXVFjCMBvKnhUHp6B/embed?start=true&loop=true&delayms=3000"
-                    frameborder="0"
-                    width="auto"
-                    height="auto"
-                    allowfullscreen="true"
-                    mozallowfullscreen="true"
-                    webkitallowfullscreen="true"
-                  ></iframe>
-                </div>
-                <div class="sub-description">
-                  <iframe
-                    src="https://docs.google.com/presentation/d/e/2PACX-1vS--SczqCWlaigCUY5aA5ym7fGWw0Iq_HMLs8dqCZcyRhl1dX_ecblIXVO70pHXYkYXMWtbL8vTICuV/embed?start=true&loop=true&delayms=3000"
-                    frameborder="0"
-                    width="auto"
-                    height="auto"
-                    allowfullscreen="true"
-                    mozallowfullscreen="true"
-                    webkitallowfullscreen="true"
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-            <!--  -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description-4">
-                <h1>4. Matematika</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content-4">
-                <div class="sub-description">
-                  <img src="../assets/studies/first-content/matematika1.jpg" />
-                  <p>
-                    Membuat poster matematika wajib mengenai materi sudut
-                    trigonometri (sudut berelasi dan sudut istimewa).
-                  </p>
-                </div>
-                <div class="sub-description">
-                  <img src="../assets/studies/first-content/matematika2.png" />
-                  <p>
-                    Membuat poster matematika wajib mengenai aturan sinus,
-                    aturan cosinus, dan grafik fungsi trigonometri.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!--  -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description-5">
-                <h1>5. Sejarah Indonesia</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content-5">
-                <div class="sub-description">
-                  <img src="../assets/studies/first-content/sejarah1.jpg" />
-                  <p>
-                    Membuat infografis mengenai sejarah Kerajaan Sriwijaya di
-                    Indonesia.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!--  -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description-6">
-                <h1>6. Bahasa Inggris</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content-6">
-                <div class="sub-description">
-                  <iframe
-                    width="auto"
-                    height="auto"
-                    src="https://www.youtube-nocookie.com/embed/v-CgVjMVM_Y?si=D5l_A_-nFXmlCvyI"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-            <!--  -->
-          </div>
-          <p>Kelompok B (Umum)</p>
-          <div class="grid-container">
-            <!--  -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description-7">
-                <h1>1. Seni Budaya</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content-7">
-                <div class="sub-description">
-                  <iframe
-                    src="https://docs.google.com/presentation/d/e/2PACX-1vRBDy7gS7mz7v9JpAxmAxEJ5wnlImhMvxb8BgBg-pM0cJtLrEU7A4YBR0QsmMcdi08YZJDFShDRAKHn/embed?start=true&loop=true&delayms=3000"
-                    frameborder="0"
-                    width="auto"
-                    height="auto"
-                    allowfullscreen="true"
-                    mozallowfullscreen="true"
-                    webkitallowfullscreen="true"
-                  ></iframe>
-                  <p>
-                    Membuat presentasi tentang hasil analisis musik tradisional
-                    bersama
-                    <a href="https://sites.google.com/smapetrus.net/2021122"
-                      >Glenn Jayden Wen</a
-                    >
-                    dan
-                    <a href="https://sites.google.com/smapetrus.net/2021086"
-                      >Rhiquelshen Charolim</a
-                    >.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!--  -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description-8">
-                <h1>2. Pendidikan Jasmani, Olahraga, dan Kesehatan</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content-8">
-                <div class="sub-description">
-                  <img src="../assets/studies/first-content/penjas1.png" />
-                </div>
-              </div>
-            </div>
-            <!--  -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description-9">
-                <h1>3. Prakarya dan Kewirausahaan</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content-9">
-                <div class="sub-description">
-                  <iframe
-                    src="https://docs.google.com/presentation/d/e/2PACX-1vTQQCsb4fpMx2wwupGGAatonodStXCiwi9omnUbpjQogXW3JLsJ6dDm6HFowQcbb4qBbAVrSMmedRPU/embed?start=true&loop=true&delayms=3000"
-                    frameborder="0"
-                    width="auto"
-                    height="auto"
-                    allowfullscreen="true"
-                    mozallowfullscreen="true"
-                    webkitallowfullscreen="true"
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-            <!--  -->
-          </div>
-          <p>Kelompok C (Peminatan)</p>
-          <div class="grid-container">
-            <!--  -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description-10">
-                <h1>1. Matematika</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content-10">
-                <div class="sub-description">
-                  <iframe
-                    src="https://docs.google.com/presentation/d/e/2PACX-1vSsdv8EnhxfRvunwTf8YF8iOruejZE_q1zNGV95a4eZUTtBSO0cc4NEIGX5SWCQlSVWY_hzmYFIzslc/embed?start=true&loop=true&delayms=3000"
-                    frameborder="0"
-                    width="auto"
-                    height="auto"
-                    allowfullscreen="true"
-                    mozallowfullscreen="true"
-                    webkitallowfullscreen="true"
-                  ></iframe>
-                  <p>
-                    Membuat catatan rangkuman mengenai refleksi tentang materi
-                    dan pembelajaran yang dibahas pada matematika minat.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!--  -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description-11">
-                <h1>2. Biologi</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content-11">
-                <div class="sub-description">
-                  <iframe
-                    src="https://docs.google.com/presentation/d/e/2PACX-1vTKkDaN_M_gTIIg9yXXlt4IxGiU_0x_rindqEBR07ET8SSDwW30DeLaiOsLNAeLwIGr6Wh_X6W46fgp/embed?start=true&loop=true&delayms=3000"
-                    frameborder="0"
-                    width="auto"
-                    height="auto"
-                    allowfullscreen="true"
-                    mozallowfullscreen="true"
-                    webkitallowfullscreen="true"
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-            <!--  -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description-12">
-                <h1>3. Fisika</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content-12">
-                <div class="sub-description">
-                  <div
-                    style="
-                      position: relative;
-                      width: 100%;
-                      height: 0;
-                      padding-top: 250%;
-                      padding-bottom: 0;
-                      box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
-                      overflow: hidden;
-                      border-radius: 8px;
-                      will-change: transform;
-                    "
-                  >
-                    <iframe
-                      loading="lazy"
-                      style="
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        top: 0;
-                        left: 0;
-                        border: none;
-                        padding: 0;
-                        margin: 0;
-                      "
-                      src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF89p-9YJ8&#x2F;pSuf-HpYyB7otpIO6Paalw&#x2F;view?embed"
-                      allowfullscreen="allowfullscreen"
-                      allow="fullscreen"
-                    >
-                    </iframe>
-                  </div>
-                  <p>
-                    Membuat poster tentang gerak impuls, momentum, dan harmonis
-                    bersama dengan kelompok.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!--  -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description-13">
-                <h1>4. Kimia</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content-13">
-                <div class="sub-description">
-                  <iframe
-                    src="https://docs.google.com/presentation/d/e/2PACX-1vQ5qocY1A2yDJNniwlWTy6lBIOFqWv1zF3OG50VsObUBTo8Vwb8FyLvQ9-l1XBXAI3zDKHSNB3V08yf/embed?start=true&loop=true&delayms=3000"
-                    frameborder="0"
-                    width="auto"
-                    height="auto"
-                    allowfullscreen="true"
-                    mozallowfullscreen="true"
-                    webkitallowfullscreen="true"
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-            <!--  -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description-14">
-                <h1>5. Bahasa Mandarin</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content-14">
-                <div class="sub-description">
-                  <p>Membuat kaligrafi bahasa mandarin.</p>
-                </div>
-              </div>
-            </div>
-            <!--  -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description-15">
-                <h1>6. Ekonomi</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content-15">
-                <div class="sub-description">
-                  <iframe
-                    src="https://docs.google.com/presentation/d/e/2PACX-1vReUJ-oAihLSZSInvf5T3Nk_4EHXo1MdcO2-BcnOkSk12VoXBPI4HDO_aGaB6Y7aAjwh38WMv3zXUnk/embed?start=true&loop=true&delayms=3000"
-                    frameborder="0"
-                    width="auto"
-                    height="auto"
-                    allowfullscreen="true"
-                    mozallowfullscreen="true"
-                    webkitallowfullscreen="true"
-                  ></iframe>
-                  <p>
-                    Melakukan percobaan menjadi seorang pengusaha yang menyusun
-                    visi misi, rencana, target pasar, hingga analisis SWOT
-                    bersama dengan kelompok.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!--  -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description-16">
-                <h1>7. Informatika</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content-16">
-                <div class="sub-description">
-                  <p>
-                    Link <i>Thunkable</i>:
-                    <a
-                      href="https://x.thunkable.com/signup?referrerId=edwin.2021060"
-                      >x.thunkable.com/signup?referrerId=edwin.2021060</a
-                    >
-                  </p>
-                  <p>
-                    Membuat beberapa program sederhana menggunakan
-                    <i>Thunkable</i> sebagai media pemrograman, yang menggunakan
-                    konsep pemrograman berupa menyusun balok-balok untuk
-                    menghasilkan suatu program yang berjalan dengan
-                    fungsi-fungsinya.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!--  -->
-          </div>
-        </div>
-      </section>
-      <section class="second-content">
-        <h1>Kelas 11</h1>
-        <div class="wrapper">
-          <p>Kelompok A (Umum)</p>
-          <div class="grid-container">
-            <!-- Kelas 11 = 15 Mapel -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description2-1">
-                <h1>1. Pendidikan Agama Katolik dan Budi Pekerti</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content2-1">
-                <div class="sub-description">
-                  <iframe
-                    src="https://docs.google.com/document/d/e/2PACX-1vS7pb2TiZZRhY3RqL4UCYkr_qButs5TMjumG1Mq_XYSv5BoHbEFpUpqwiEFFMwSG1_TQxzWONFoB1zH/pub?embedded=true"
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-            <!--  -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description2-2">
-                <h1>2. Pendidikan Pancasila dan Kewarganegaraan</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content2-2">
-                <div class="sub-description">
-                  <p>-</p>
-                </div>
-              </div>
-            </div>
-            <!--  -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description2-3">
-                <h1>3. Bahasa Indonesia</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content2-3">
-                <div class="sub-description">
-                  <iframe
-                    src="https://docs.google.com/document/d/e/2PACX-1vST57z2hyambBfeWuFoQgTDTAtkyDcmNgyXOnQ5V4MgmMOOcXsVNaaatBvMu02w0VYS7ykybVnJ3XCM/pub?embedded=true"
-                  ></iframe>
-                  <p>
-                    Melakukan analisis berupa teks resensi terhadap buku
-                    bergambar yang berjudulkan "Blue Lock" bersama kelompok.
-                  </p>
-                </div>
-                <div class="sub-description">
-                  <iframe
-                    src="https://docs.google.com/document/d/e/2PACX-1vTxVQckt1KIh8yWoAzMpZqjBZiggM3hvoCBOmL8gZBcUvLIZpXTZ8fQmZ1hwkJnB1wWQp_xmSaX7rna/pub?embedded=true"
-                  ></iframe>
-                  <p>
-                    Membuat sebuah karya tulis ilmiah bersama kelompok saya yang
-                    berjudulkan "Tinjauan Efektivitas Penggunaan Google
-                    Classroom sebagai Media Pembelajaran di Kelas XI MIA 2 SMA
-                    Santu Petrus"
-                  </p>
-                </div>
-                <div class="sub-description">
-                  <iframe
-                    src="https://docs.google.com/document/d/e/2PACX-1vT_DhnefuRKVWDARTp5RLQlSawYrx6JKvKAb83XvEXt3s6QYF3MUS9dNVTyIBEQRAP-5gB4-4_T8sZ8/pub?embedded=true"
-                  ></iframe>
-                  <p>
-                    Membuat sebuah LKPD bersama kelompok saya yang berjudulkan
-                    "Pengaruh Kebudayaan Tionghoa Terhadap Masyarakat Pontianak"
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!--  -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description2-4">
-                <h1>4. Matematika</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content2-4">
-                <div class="sub-description">
-                  <iframe
-                    width="auto"
-                    height="auto"
-                    src="https://www.youtube.com/embed/TE1BqPXXX7E?si=8orNv9D3tkJwK84c"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                  ></iframe>
-                  <p>
-                    Mempelajari materi mengenai Konsep Dasar Turunan Fungsi
-                    Aljabar yang bersumber dari video yang ada di platform
-                    YouTube.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!--  -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description2-5">
-                <h1>5. Sejarah</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content2-5">
-                <div class="sub-description">
-                  <iframe
-                    src="https://docs.google.com/document/d/e/2PACX-1vRrOVeIF6to2dZUsyYVK4RwwC-rEav0-IJtYy6PrnzqC-zXCYWavCrhshsjxVQSRlN_39PlhHpBlQJu/pub?embedded=true"
-                  ></iframe>
-                  <p>
-                    Membuat penjelasan tentang Rahadi Osman, seorang tokoh
-                    pejuang kemerdekaan di Kalimantan Barat.
-                  </p>
-                </div>
-                <div class="sub-description">
-                  <div
-                    style="
-                      position: relative;
-                      width: 100%;
-                      height: 0;
-                      padding-top: 250%;
-                      padding-bottom: 0;
-                      box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
-                      overflow: hidden;
-                      border-radius: 8px;
-                      will-change: transform;
-                    "
-                  >
-                    <iframe
-                      loading="lazy"
-                      style="
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        top: 0;
-                        left: 0;
-                        border: none;
-                        padding: 0;
-                        margin: 0;
-                      "
-                      src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFimkWUlUQ&#x2F;view?embed"
-                      allowfullscreen="allowfullscreen"
-                      allow="fullscreen"
-                    >
-                    </iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--  -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description2-6">
-                <h1>6. Bahasa Inggris</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content2-6">
-                <div class="sub-description">
-                  <iframe
-                    src="https://docs.google.com/document/d/e/2PACX-1vRqKHVWb2CAeaQeyDQjAYJmbb9kC8BRd0pwAR-S1wOnrQhrY3yjnL4xiSHVJx1knfCuFqrlEJLux-du/pub?embedded=true"
-                  ></iframe>
-                  <p><b>Report Text</b></p>
-                </div>
-                <div class="sub-description">
-                  <p>-</p>
-                  <p><b>Invitation Letter</b></p>
-                </div>
-                <div class="sub-description">
-                  <iframe
-                    src="https://docs.google.com/document/d/e/2PACX-1vR8sVNckvp5qZ2W3zJiekhquFS6AmmdLk83KWf6thTkLQU-vM0iTqt5ZOut5bDTJgS75EdwhaEjO9jR/pub?embedded=true"
-                  ></iframe>
-                  <p><b>Exposition Text</b></p>
-                </div>
-                <div class="sub-description">
-                  <iframe
-                    src="https://docs.google.com/document/d/e/2PACX-1vSiyNd1kb2YzsVFUXhgTD0C8EOitB87vVwbnI-Y8I2h6vl_ZSGzfRe2bL9dMqemg0NyZ7DcOaIRX3of/pub?embedded=true"
-                  ></iframe>
-                  <p><b>Personal Letter</b></p>
-                </div>
-                <div class="sub-description">
-                  <iframe
-                    src="https://docs.google.com/document/d/e/2PACX-1vSznDPUPhlzVZlgyEYfqcKFiet26Zdh-QiJElSuKvvm55NvLFDljVlHzmZ52hGhdrVD65bwMKVZRgIH/pub?embedded=true"
-                  ></iframe>
-                  <p><b>Cause and Effect Text</b></p>
-                </div>
-                <div class="sub-description">
-                  <iframe
-                    src="https://docs.google.com/document/d/e/2PACX-1vRjIcYFS-gW2ERRgNQh4ovRLeTsz011pH1RNgua7FanKXiZtNqBwEBB-ps0pY21s8K0F_Qj9I1jnBzJ/pub?embedded=true"
-                  ></iframe>
-                  <p><b>Explanation Text</b></p>
-                </div>
-              </div>
-            </div>
-            <!--  -->
-          </div>
-          <p>Kelompok B (Umum)</p>
-          <div class="grid-container">
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description2-7">
-                <h1>1. Seni Budaya</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content2-7">
-                <div class="sub-description">
-                  <iframe
-                    src="https://docs.google.com/document/d/e/2PACX-1vQrZA3mofC5vc1ZeUVE0tcbqag5VElD8HjiUctabcfo-mkvhrsUwDTpH52CYvs2qDyPWIBV0icDHtcw/pub?embedded=true"
-                  ></iframe>
-                  <p>
-                    Membuat alat untuk menyimpan 2 kotak tisu (dual) dari kotak
-                    kardus bekas bersama 1 rekan teman saya.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description2-8">
-                <h1>2. Pendidikan Jasmani, Olahraga, dan Kesehatan</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content2-8">
-                <div class="sub-description">
-                  <iframe
-                    src="https://drive.google.com/file/d/183YKnQYLMNnX6_k1sooUo4A-vjHIuJFR/preview"
-                    width="auto"
-                    height="auto"
-                    allow="autoplay"
-                  ></iframe>
-                  <p>
-                    Melakukan senam tabata yang dapat meningkatkan kesehatan
-                    jasmani dan rohani.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description2-9">
-                <h1>3. Prakarya dan Kewirausahaan</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content2-9">
-                <div class="sub-description">
-                  <iframe
-                    src="https://drive.google.com/file/d/183YKnQYLMNnX6_k1sooUo4A-vjHIuJFR/preview"
-                    width="auto"
-                    height="auto"
-                    allow="autoplay"
-                  ></iframe>
-                  <p>
-                    Melakukan senam tabata yang dapat meningkatkan kesehatan
-                    jasmani dan rohani.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <p>Kelompok C (Peminatan)</p>
-          <div class="grid-container">
-            <!--  -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description2-10">
-                <h1>1. Matematika</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content2-10">
-                <div class="sub-description">
-                  <div
-                    style="
-                      position: relative;
-                      width: 100%;
-                      height: 0;
-                      padding-top: 250%;
-                      padding-bottom: 0;
-                      box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
-                      margin-top: 0;
-                      margin-bottom: 0.9em;
-                      overflow: hidden;
-                      border-radius: 8px;
-                      will-change: transform;
-                    "
-                  >
-                    <iframe
-                      loading="lazy"
-                      style="
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        top: 0;
-                        left: 0;
-                        border: none;
-                        padding: 0;
-                        margin: 0;
-                      "
-                      src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFkS9S-7jI&#x2F;olF47fECkP5Tojm91w-c8w&#x2F;view?embed"
-                      allowfullscreen="allowfullscreen"
-                      allow="fullscreen"
-                    >
-                    </iframe>
-                  </div>
-                  <p>Mengerjakan infografis tentang lingkaran.</p>
-                </div>
-                <div class="sub-description">
-                  <div
-                    style="
-                      position: relative;
-                      width: 100%;
-                      height: 0;
-                      padding-top: 250%;
-                      padding-bottom: 0;
-                      box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
-                      margin-top: 0;
-                      margin-bottom: 0.9em;
-                      overflow: hidden;
-                      border-radius: 8px;
-                      will-change: transform;
-                    "
-                  >
-                    <iframe
-                      loading="lazy"
-                      style="
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        top: 0;
-                        left: 0;
-                        border: none;
-                        padding: 0;
-                        margin: 0;
-                      "
-                      src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFkTO-b69E&#x2F;LkZb3TF7lv9e4hi7ubHl6Q&#x2F;view?embed"
-                      allowfullscreen="allowfullscreen"
-                      allow="fullscreen"
-                    >
-                    </iframe>
-                  </div>
-                  <p>Mengerjakan infografis tentang polinomial.</p>
-                </div>
-                <div class="sub-description">
-                  <iframe
-                    src="https://docs.google.com/presentation/d/e/2PACX-1vR0ZEHmhJ-Hr_y8Oct35LanDnbscWG2MDDtj2WXT2h0brAld9IucdwhGxWII6c8H64n33l6BrQJia8c/embed?start=true&loop=true&delayms=3000"
-                    frameborder="0"
-                    width="auto"
-                    height="auto"
-                    allowfullscreen="true"
-                    mozallowfullscreen="true"
-                    webkitallowfullscreen="true"
-                  ></iframe>
-                  <p>Membuat rangkuman catatan pelajaran Matematika Minat.</p>
-                </div>
-              </div>
-            </div>
-            <!--  -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description2-11">
-                <h1>2. Biologi</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content2-11">
-                <div class="sub-description">
-                  <div
-                    style="
-                      position: relative;
-                      width: 100%;
-                      height: 0;
-                      padding-top: 250%;
-                      padding-bottom: 0;
-                      box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
-                      margin-top: 0;
-                      margin-bottom: 0.9em;
-                      overflow: hidden;
-                      border-radius: 8px;
-                      will-change: transform;
-                    "
-                  >
-                    <iframe
-                      loading="lazy"
-                      style="
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        top: 0;
-                        left: 0;
-                        border: none;
-                        padding: 0;
-                        margin: 0;
-                      "
-                      src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFX-M4FFiE&#x2F;view?embed"
-                      allowfullscreen="allowfullscreen"
-                      allow="fullscreen"
-                    >
-                    </iframe>
-                  </div>
-                </div>
-                <div class="sub-description">
-                  <div
-                    style="
-                      position: relative;
-                      width: 100%;
-                      height: 0;
-                      padding-top: 250%;
-                      padding-bottom: 0;
-                      box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
-                      margin-top: 0;
-                      margin-bottom: 0.9em;
-                      overflow: hidden;
-                      border-radius: 8px;
-                      will-change: transform;
-                    "
-                  >
-                    <iframe
-                      loading="lazy"
-                      style="
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        top: 0;
-                        left: 0;
-                        border: none;
-                        padding: 0;
-                        margin: 0;
-                      "
-                      src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFKMaF-gjo&#x2F;6inYs8v6uLj3I0iTtnLrQQ&#x2F;watch?embed"
-                      allowfullscreen="allowfullscreen"
-                      allow="fullscreen"
-                    >
-                    </iframe>
-                  </div>
-                </div>
-                <div class="sub-description">
-                  <iframe
-                    src="https://drive.google.com/file/d/1nWq-LwyqIFmEBhVaF8h1NwHf1tXeZpp5/preview"
-                    width="auto"
-                    height="auto"
-                    allow="autoplay"
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-            <!--  -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description2-12">
-                <h1>3. Fisika</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content2-12">
-                <div class="sub-description">
-                  <div
-                    style="
-                      position: relative;
-                      width: 100%;
-                      height: 0;
-                      padding-top: 250%;
-                      padding-bottom: 0;
-                      box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
-                      margin-top: 0;
-                      margin-bottom: 0.9em;
-                      overflow: hidden;
-                      border-radius: 8px;
-                      will-change: transform;
-                    "
-                  >
-                    <iframe
-                      loading="lazy"
-                      style="
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        top: 0;
-                        left: 0;
-                        border: none;
-                        padding: 0;
-                        margin: 0;
-                      "
-                      src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFan6N6Qao&#x2F;view?embed"
-                      allowfullscreen="allowfullscreen"
-                      allow="fullscreen"
-                    >
-                    </iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--  -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description2-13">
-                <h1>4. Kimia</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content2-13">
-                <div class="sub-description">
-                  <div
-                    style="
-                      position: relative;
-                      width: 100%;
-                      height: 0;
-                      padding-top: 56.25%;
-                      padding-bottom: 0;
-                      box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
-                      margin-top: 0;
-                      margin-bottom: 0.9em;
-                      overflow: hidden;
-                      border-radius: 8px;
-                      will-change: transform;
-                    "
-                  >
-                    <iframe
-                      loading="lazy"
-                      style="
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        top: 0;
-                        left: 0;
-                        border: none;
-                        padding: 0;
-                        margin: 0;
-                      "
-                      src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFR-GRCchs&#x2F;view?embed"
-                      allowfullscreen="allowfullscreen"
-                      allow="fullscreen"
-                    >
-                    </iframe>
-                  </div>
-                </div>
-                <div class="sub-description">
-                  <iframe
-                    src="https://docs.google.com/document/d/e/2PACX-1vSy483Dncat-5LF4L5u57vEHZQsqA7dP7PzwtTqFN8I8siZPpZrfEF_7KP7VnekoGCRGjSqpwxCGVi5/pub?embedded=true"
-                  ></iframe>
-                  <p>
-                    Artikel pembuatan produk untuk mengatasi kelaparan di
-                    Indonesia.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!--  -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description2-14">
-                <h1>5. Bahasa Mandarin</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content2-14">
-                <div class="sub-description">
-                  <p>
-                    Pembuatan kaligrafi puisi yang berjudul 登鹳雀楼 (Dēng guàn què lóu ) yang dikarang oleh 王之渙 (Wang Zhihuan). Puisi ini menceritakan tentang matahari yang terbenam di pegunungan yang jauh, dengan sungai berwarna kuning yang menyebar sampai ke laut, Kerinduan untuk melihat pemandangan yang indah seribu mil lebih jauh, kamu hanya perlu naik satu lantai (tingkat) lagi untuk melihat lebih jauh.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!--  -->
-            <div class="grid-container-child">
-              <div class="grid-content-description" id="description2-15">
-                <h1>6. Informatika</h1>
-                <p>Click to expand!</p>
-              </div>
-              <span></span>
-              <div class="grid-content" id="content2-15">
-                <div class="sub-description">
-                  <div
-                    style="
-                      position: relative;
-                      width: 100%;
-                      height: 0;
-                      padding-top: 250%;
-                      padding-bottom: 0;
-                      box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
-                      margin-top: 0;
-                      margin-bottom: 0.9em;
-                      overflow: hidden;
-                      border-radius: 8px;
-                      will-change: transform;
-                    "
-                  >
-                    <iframe
-                      loading="lazy"
-                      style="
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        top: 0;
-                        left: 0;
-                        border: none;
-                        padding: 0;
-                        margin: 0;
-                      "
-                      src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFW2RWts-M&#x2F;view?embed"
-                      allowfullscreen="allowfullscreen"
-                      allow="fullscreen"
-                    >
-                    </iframe>
-                  </div>
-                  <p><b>Infografis CSS</b></p>
-                </div>
-                <div class="sub-description">
-                  <div
-                    style="
-                      position: relative;
-                      width: 100%;
-                      height: 0;
-                      padding-top: 250%;
-                      padding-bottom: 0;
-                      box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
-                      margin-top: 0;
-                      margin-bottom: 0.9em;
-                      overflow: hidden;
-                      border-radius: 8px;
-                      will-change: transform;
-                    "
-                  >
-                    <iframe
-                      loading="lazy"
-                      style="
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        top: 0;
-                        left: 0;
-                        border: none;
-                        padding: 0;
-                        margin: 0;
-                      "
-                      src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFQ8l-pLoA&#x2F;view?embed"
-                      allowfullscreen="allowfullscreen"
-                      allow="fullscreen"
-                    >
-                    </iframe>
-                  </div>
-                  <p><b>Infografis Bahasa Pemrograman</b></p>
-                </div>
-                <div class="sub-description">
-                  <div
-                    style="
-                      position: relative;
-                      width: 100%;
-                      height: 0;
-                      padding-top: 56.25%;
-                      padding-bottom: 0;
-                      box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
-                      margin-top: 0;
-                      margin-bottom: 0.9em;
-                      overflow: hidden;
-                      border-radius: 8px;
-                      will-change: transform;
-                    "
-                  >
-                    <iframe
-                      loading="lazy"
-                      style="
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        top: 0;
-                        left: 0;
-                        border: none;
-                        padding: 0;
-                        margin: 0;
-                      "
-                      src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFRV3OTyd4&#x2F;8OOTlBmILqDl6Acw-UXn-g&#x2F;view?embed"
-                      allowfullscreen="allowfullscreen"
-                      allow="fullscreen"
-                    >
-                    </iframe>
-                  </div>
-                  <p><b>Infografis HTML</b></p>
-                </div>
-                <div class="sub-description">
-                  <iframe src="https://docs.google.com/document/d/e/2PACX-1vQU3gJpGtvoP-H3v2x6kdC6uL6BcQjEau2CFLxxgq5jZirVQRdV2ix3kAUUdSx6M_0PrPC5TVtXnANW/pub?embedded=true"></iframe>
-                  <p>Membuat naskah dialog dubbing bersama kelompok.</p>
-                </div>
-            </div>
-            <!--  -->
-          </div>
-        </div>
-      </section>
-      <section class="third-content">
-        <h1>Kelas 12</h1>
-        <div class="wrapper">
-          <p>Kelompok A (Umum)</p>
-        </div>
-      </section>
-    </main>
-    <footer id="footer">
-      <div class="ocean-waves">
-        <div class="ocean-wave" id="ocean-wave1"></div>
-        <div class="ocean-wave" id="ocean-wave2"></div>
-        <div class="ocean-wave" id="ocean-wave3"></div>
-        <div class="ocean-wave" id="ocean-wave4"></div>
-      </div>
-      <ul class="footer-social">
-        <li><i class="fa-brands fa-instagram"></i></li>
-        <li><i class="fa-brands fa-facebook"></i></li>
-        <li><i class="fa-solid fa-envelope"></i></li>
-        <li><i class="fa-brands fa-whatsapp"></i></li>
-      </ul>
-      <ul class="footer-menu">
-        <li>Home</li>
-        <li>About</li>
-        <li>References</li>
-        <li>Contact</li>
-      </ul>
-      <p>&copy;2023 Edwin Hermili | All Rights Reserved</p>
-    </footer>
-  </body>
-  <script
-    src="https://kit.fontawesome.com/2e9ce271b4.js"
-    crossorigin="anonymous"
-  ></script>
-  <script src="../functions/main/footer.js"></script>
-  <script defer src="../functions/main/progress-bar.js"></script>
-  <script src="../functions/main/dark-light-mode.js" defer></script>
-  <script src="../functions/pages/studies.js"></script>
+		<!-- Responsives -->
+		<link
+			rel="stylesheet"
+			href="../styles/responsives/large-view.css"
+			media="screen and (min-width: 993px) and (max-width: 1024px)"
+		/>
+		<link
+			rel="stylesheet"
+			href="../styles/responsives/medium-view.css"
+			media="screen and (min-width: 769px) and (max-width: 992px)"
+		/>
+		<link
+			rel="stylesheet"
+			href="../styles/responsives/small-view.css"
+			media="screen and (min-width: 601px) and (max-width: 768px)"
+		/>
+		<link
+			rel="stylesheet"
+			href="../styles/responsives/extra-small-view.css"
+			media="screen and (max-width: 600px)"
+		/>
+	</head>
+	<body id="bodies">
+		<header>
+			<nav id="navigation-bar">
+				<ul>
+					<li><img src="../assets/svg/github-mark.svg" /></li>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../index.html#about">About</a></li>
+					<li>
+						<div class="dropdown-button" id="dropdown">
+							<button>
+								Dropdown
+								<i class="fa-solid fa-caret-down"></i>
+							</button>
+							<div class="dropdown-content">
+								<ul>
+									<li><a href="/">Studies</a></li>
+									<li><a href="/">Achievements</a></li>
+									<li><a href="/">References</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="dark-light-switch">
+							<input
+								type="checkbox"
+								id="switch"
+								name="switch"
+								class="switch_toggle"
+							/>
+							<label class="switch_toggle" for="switch">
+								<div class="mask-toggle">
+									<div class="icon-wrap">
+										<div class="sun-icon">
+											<i class="fa-solid fa-circle"></i>
+										</div>
+									</div>
+									<div class="icon-wrap">
+										<div class="moon-icon">
+											<i class="fa-solid fa-moon"></i>
+										</div>
+									</div>
+									<div class="switch-line"></div>
+								</div>
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="hamburger-menu">
+							<input
+								type="checkbox"
+								id="menu"
+								name="menu"
+								class="menu_checkbox"
+							/>
+							<label class="menu_toggle" for="menu">
+								<i class="fa-solid fa-bars"></i>
+								<!-- <i class="fa-solid fa-burger"></i> -->
+							</label>
+							<label class="menu_overlay" for="menu"></label>
+							<!--  -->
+							<div class="hamburger-content">
+								<div class="hamburger-content-header">
+									<label class="menu_toggle__close" for="menu">
+										<i class="fa-solid fa-xmark"></i>
+									</label>
+									<span>Hamburger Menu</span>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<div id="progress">
+				<div id="progress-bar"></div>
+			</div>
+		</header>
+		<main>
+			<section class="first-content">
+				<h1>Kelas 10</h1>
+				<div class="wrapper">
+					<p>Kelompok A (Umum)</p>
+					<div class="grid-container">
+						<!-- Kelas 10 = 16 Mapel -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description-1">
+								<h1>1. Pendidikan Agama Katolik dan Budi Pekerti</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content-1">
+								<div class="sub-description">
+									<img src="../assets/studies/first-content/agama1.png" />
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description-2">
+								<h1>2. Pendidikan Pancasila dan Kewarganegaraan</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content-2">
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/document/d/e/2PACX-1vRj9ZUjyONOFoxDIFQF4NW877NW51ptVP-sGUiuXhY0xF4a0ejmSn_G-yyd-a31u4U2u8eeng81zpk3/pub?embedded=true"
+									></iframe>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/presentation/d/e/2PACX-1vQ3FXPV0y7b6RSCrBMTswwxMlm3nupTUhndPIM_xReak7RsFNPFCk3w7EZwhuQS1cJXtcNYvGmOwB_-/embed?start=true&loop=true&delayms=3000"
+										frameborder="0"
+										width="auto"
+										height="auto"
+										allowfullscreen="true"
+										mozallowfullscreen="true"
+										webkitallowfullscreen="true"
+									></iframe>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://drive.google.com/file/d/1ubEO1_X-DCXfVWZHMJ71L9RAnFdIdOBV/preview"
+										width="auto"
+										height="auto"
+										allow="autoplay"
+									></iframe>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description-3">
+								<h1>3. Bahasa Indonesia</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content-3">
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/presentation/d/e/2PACX-1vQpMuGTBUQ1DLd3Q91H4qKLQTim7t3zLWe-UV2EK9NBsz23BQ8Odn9arcBwAgVg1_4IwtNPif2nmCy5/embed?start=true&loop=true&delayms=3000"
+										frameborder="0"
+										width="auto"
+										height="auto"
+										allowfullscreen="true"
+										mozallowfullscreen="true"
+										webkitallowfullscreen="true"
+									></iframe>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/presentation/d/e/2PACX-1vQyz_1DmblCAVnOeYCQMJGFa2mxZVT4A_EaLKVAeRnGhJatg5P_B5yXA2klIduLe6LuP0z3FmoagF8U/embed?start=true&loop=true&delayms=3000"
+										frameborder="0"
+										width="auto"
+										height="auto"
+										allowfullscreen="true"
+										mozallowfullscreen="true"
+										webkitallowfullscreen="true"
+									></iframe>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/presentation/d/e/2PACX-1vR-UlWaXXU2vs9lyyODjml1y9-peVE-UxeXKQIe3S2zzsTu72OPv8zQCvHeGGIyeG68UiRD8H5nw-Jc/embed?start=true&loop=true&delayms=3000"
+										frameborder="0"
+										width="auto"
+										height="auto"
+										allowfullscreen="true"
+										mozallowfullscreen="true"
+										webkitallowfullscreen="true"
+									></iframe>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/presentation/d/e/2PACX-1vRIap31zIXwzxEyYdOZrskolPdpn8hyXZoFC_ifTX-6FXZbgDwDrUgREJdzawmpTd1ZGcJAs-O32QL7/embed?start=true&loop=true&delayms=3000"
+										frameborder="0"
+										width="auto"
+										height="auto"
+										allowfullscreen="true"
+										mozallowfullscreen="true"
+										webkitallowfullscreen="true"
+									></iframe>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/presentation/d/e/2PACX-1vSdzjNOs4i7qp40Dor_w_RovnqvlpiqASQPNiDYl7sGW_xVCOftf8XH3RXsg7cWXVFjCMBvKnhUHp6B/embed?start=true&loop=true&delayms=3000"
+										frameborder="0"
+										width="auto"
+										height="auto"
+										allowfullscreen="true"
+										mozallowfullscreen="true"
+										webkitallowfullscreen="true"
+									></iframe>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/presentation/d/e/2PACX-1vS--SczqCWlaigCUY5aA5ym7fGWw0Iq_HMLs8dqCZcyRhl1dX_ecblIXVO70pHXYkYXMWtbL8vTICuV/embed?start=true&loop=true&delayms=3000"
+										frameborder="0"
+										width="auto"
+										height="auto"
+										allowfullscreen="true"
+										mozallowfullscreen="true"
+										webkitallowfullscreen="true"
+									></iframe>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description-4">
+								<h1>4. Matematika</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content-4">
+								<div class="sub-description">
+									<img src="../assets/studies/first-content/matematika1.jpg" />
+									<p>
+										Membuat poster matematika wajib mengenai materi sudut
+										trigonometri (sudut berelasi dan sudut istimewa).
+									</p>
+								</div>
+								<div class="sub-description">
+									<img src="../assets/studies/first-content/matematika2.png" />
+									<p>
+										Membuat poster matematika wajib mengenai aturan sinus,
+										aturan cosinus, dan grafik fungsi trigonometri.
+									</p>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description-5">
+								<h1>5. Sejarah Indonesia</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content-5">
+								<div class="sub-description">
+									<img src="../assets/studies/first-content/sejarah1.jpg" />
+									<p>
+										Membuat infografis mengenai sejarah Kerajaan Sriwijaya di
+										Indonesia.
+									</p>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description-6">
+								<h1>6. Bahasa Inggris</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content-6">
+								<div class="sub-description">
+									<iframe
+										width="auto"
+										height="auto"
+										src="https://www.youtube-nocookie.com/embed/v-CgVjMVM_Y?si=D5l_A_-nFXmlCvyI"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+										allowfullscreen
+									></iframe>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+					</div>
+					<p>Kelompok B (Umum)</p>
+					<div class="grid-container">
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description-7">
+								<h1>1. Seni Budaya</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content-7">
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/presentation/d/e/2PACX-1vRBDy7gS7mz7v9JpAxmAxEJ5wnlImhMvxb8BgBg-pM0cJtLrEU7A4YBR0QsmMcdi08YZJDFShDRAKHn/embed?start=true&loop=true&delayms=3000"
+										frameborder="0"
+										width="auto"
+										height="auto"
+										allowfullscreen="true"
+										mozallowfullscreen="true"
+										webkitallowfullscreen="true"
+									></iframe>
+									<p>
+										Membuat presentasi tentang hasil analisis musik tradisional
+										bersama
+										<a href="https://sites.google.com/smapetrus.net/2021122">
+											Glenn Jayden Wen
+										</a>
+										dan
+										<a href="https://sites.google.com/smapetrus.net/2021086">
+											Rhiquelshen Charolim
+										</a>
+										.
+									</p>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description-8">
+								<h1>2. Pendidikan Jasmani, Olahraga, dan Kesehatan</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content-8">
+								<div class="sub-description">
+									<img src="../assets/studies/first-content/penjas1.png" />
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description-9">
+								<h1>3. Prakarya dan Kewirausahaan</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content-9">
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/presentation/d/e/2PACX-1vTQQCsb4fpMx2wwupGGAatonodStXCiwi9omnUbpjQogXW3JLsJ6dDm6HFowQcbb4qBbAVrSMmedRPU/embed?start=true&loop=true&delayms=3000"
+										frameborder="0"
+										width="auto"
+										height="auto"
+										allowfullscreen="true"
+										mozallowfullscreen="true"
+										webkitallowfullscreen="true"
+									></iframe>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+					</div>
+					<p>Kelompok C (Peminatan)</p>
+					<div class="grid-container">
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description-10">
+								<h1>1. Matematika</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content-10">
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/presentation/d/e/2PACX-1vSsdv8EnhxfRvunwTf8YF8iOruejZE_q1zNGV95a4eZUTtBSO0cc4NEIGX5SWCQlSVWY_hzmYFIzslc/embed?start=true&loop=true&delayms=3000"
+										frameborder="0"
+										width="auto"
+										height="auto"
+										allowfullscreen="true"
+										mozallowfullscreen="true"
+										webkitallowfullscreen="true"
+									></iframe>
+									<p>
+										Membuat catatan rangkuman mengenai refleksi tentang materi
+										dan pembelajaran yang dibahas pada matematika minat.
+									</p>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description-11">
+								<h1>2. Biologi</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content-11">
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/presentation/d/e/2PACX-1vTKkDaN_M_gTIIg9yXXlt4IxGiU_0x_rindqEBR07ET8SSDwW30DeLaiOsLNAeLwIGr6Wh_X6W46fgp/embed?start=true&loop=true&delayms=3000"
+										frameborder="0"
+										width="auto"
+										height="auto"
+										allowfullscreen="true"
+										mozallowfullscreen="true"
+										webkitallowfullscreen="true"
+									></iframe>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description-12">
+								<h1>3. Fisika</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content-12">
+								<div class="sub-description">
+									<div
+										style="
+											position: relative;
+											width: 100%;
+											height: 0;
+											padding-top: 250%;
+											padding-bottom: 0;
+											box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+											overflow: hidden;
+											border-radius: 8px;
+											will-change: transform;
+										"
+									>
+										<iframe
+											loading="lazy"
+											style="
+												position: absolute;
+												width: 100%;
+												height: 100%;
+												top: 0;
+												left: 0;
+												border: none;
+												padding: 0;
+												margin: 0;
+											"
+											src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF89p-9YJ8&#x2F;pSuf-HpYyB7otpIO6Paalw&#x2F;view?embed"
+											allowfullscreen="allowfullscreen"
+											allow="fullscreen"
+										></iframe>
+									</div>
+									<p>
+										Membuat poster tentang gerak impuls, momentum, dan harmonis
+										bersama dengan kelompok.
+									</p>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description-13">
+								<h1>4. Kimia</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content-13">
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/presentation/d/e/2PACX-1vQ5qocY1A2yDJNniwlWTy6lBIOFqWv1zF3OG50VsObUBTo8Vwb8FyLvQ9-l1XBXAI3zDKHSNB3V08yf/embed?start=true&loop=true&delayms=3000"
+										frameborder="0"
+										width="auto"
+										height="auto"
+										allowfullscreen="true"
+										mozallowfullscreen="true"
+										webkitallowfullscreen="true"
+									></iframe>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description-14">
+								<h1>5. Bahasa Mandarin</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content-14">
+								<div class="sub-description">
+									<p>Membuat kaligrafi bahasa mandarin.</p>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description-15">
+								<h1>6. Ekonomi</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content-15">
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/presentation/d/e/2PACX-1vReUJ-oAihLSZSInvf5T3Nk_4EHXo1MdcO2-BcnOkSk12VoXBPI4HDO_aGaB6Y7aAjwh38WMv3zXUnk/embed?start=true&loop=true&delayms=3000"
+										frameborder="0"
+										width="auto"
+										height="auto"
+										allowfullscreen="true"
+										mozallowfullscreen="true"
+										webkitallowfullscreen="true"
+									></iframe>
+									<p>
+										Melakukan percobaan menjadi seorang pengusaha yang menyusun
+										visi misi, rencana, target pasar, hingga analisis SWOT
+										bersama dengan kelompok.
+									</p>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description-16">
+								<h1>7. Informatika</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content-16">
+								<div class="sub-description">
+									<p>
+										Link
+										<i>Thunkable</i>
+										:
+										<a
+											href="https://x.thunkable.com/signup?referrerId=edwin.2021060"
+										>
+											x.thunkable.com/signup?referrerId=edwin.2021060
+										</a>
+									</p>
+									<p>
+										Membuat beberapa program sederhana menggunakan
+										<i>Thunkable</i>
+										sebagai media pemrograman, yang menggunakan konsep
+										pemrograman berupa menyusun balok-balok untuk menghasilkan
+										suatu program yang berjalan dengan fungsi-fungsinya.
+									</p>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+					</div>
+				</div>
+			</section>
+			<section class="second-content">
+				<h1>Kelas 11</h1>
+				<div class="wrapper">
+					<p>Kelompok A (Umum)</p>
+					<div class="grid-container">
+						<!-- Kelas 11 = 15 Mapel -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description2-1">
+								<h1>1. Pendidikan Agama Katolik dan Budi Pekerti</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content2-1">
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/document/d/e/2PACX-1vS7pb2TiZZRhY3RqL4UCYkr_qButs5TMjumG1Mq_XYSv5BoHbEFpUpqwiEFFMwSG1_TQxzWONFoB1zH/pub?embedded=true"
+									></iframe>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description2-2">
+								<h1>2. Pendidikan Pancasila dan Kewarganegaraan</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content2-2">
+								<div class="sub-description">
+									<p>-</p>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description2-3">
+								<h1>3. Bahasa Indonesia</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content2-3">
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/document/d/e/2PACX-1vST57z2hyambBfeWuFoQgTDTAtkyDcmNgyXOnQ5V4MgmMOOcXsVNaaatBvMu02w0VYS7ykybVnJ3XCM/pub?embedded=true"
+									></iframe>
+									<p>
+										Melakukan analisis berupa teks resensi terhadap buku
+										bergambar yang berjudulkan "Blue Lock" bersama kelompok.
+									</p>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/document/d/e/2PACX-1vTxVQckt1KIh8yWoAzMpZqjBZiggM3hvoCBOmL8gZBcUvLIZpXTZ8fQmZ1hwkJnB1wWQp_xmSaX7rna/pub?embedded=true"
+									></iframe>
+									<p>
+										Membuat sebuah karya tulis ilmiah bersama kelompok saya yang
+										berjudulkan "Tinjauan Efektivitas Penggunaan Google
+										Classroom sebagai Media Pembelajaran di Kelas XI MIA 2 SMA
+										Santu Petrus"
+									</p>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/document/d/e/2PACX-1vT_DhnefuRKVWDARTp5RLQlSawYrx6JKvKAb83XvEXt3s6QYF3MUS9dNVTyIBEQRAP-5gB4-4_T8sZ8/pub?embedded=true"
+									></iframe>
+									<p>
+										Membuat sebuah LKPD bersama kelompok saya yang berjudulkan
+										"Pengaruh Kebudayaan Tionghoa Terhadap Masyarakat Pontianak"
+									</p>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description2-4">
+								<h1>4. Matematika</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content2-4">
+								<div class="sub-description">
+									<iframe
+										width="auto"
+										height="auto"
+										src="https://www.youtube.com/embed/TE1BqPXXX7E?si=8orNv9D3tkJwK84c"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+										allowfullscreen
+									></iframe>
+									<p>
+										Mempelajari materi mengenai Konsep Dasar Turunan Fungsi
+										Aljabar yang bersumber dari video yang ada di platform
+										YouTube.
+									</p>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description2-5">
+								<h1>5. Sejarah</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content2-5">
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/document/d/e/2PACX-1vRrOVeIF6to2dZUsyYVK4RwwC-rEav0-IJtYy6PrnzqC-zXCYWavCrhshsjxVQSRlN_39PlhHpBlQJu/pub?embedded=true"
+									></iframe>
+									<p>
+										Membuat penjelasan tentang Rahadi Osman, seorang tokoh
+										pejuang kemerdekaan di Kalimantan Barat.
+									</p>
+								</div>
+								<div class="sub-description">
+									<div
+										style="
+											position: relative;
+											width: 100%;
+											height: 0;
+											padding-top: 250%;
+											padding-bottom: 0;
+											box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+											overflow: hidden;
+											border-radius: 8px;
+											will-change: transform;
+										"
+									>
+										<iframe
+											loading="lazy"
+											style="
+												position: absolute;
+												width: 100%;
+												height: 100%;
+												top: 0;
+												left: 0;
+												border: none;
+												padding: 0;
+												margin: 0;
+											"
+											src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFimkWUlUQ&#x2F;view?embed"
+											allowfullscreen="allowfullscreen"
+											allow="fullscreen"
+										></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description2-6">
+								<h1>6. Bahasa Inggris</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content2-6">
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/document/d/e/2PACX-1vRqKHVWb2CAeaQeyDQjAYJmbb9kC8BRd0pwAR-S1wOnrQhrY3yjnL4xiSHVJx1knfCuFqrlEJLux-du/pub?embedded=true"
+									></iframe>
+									<p><b>Report Text</b></p>
+								</div>
+								<div class="sub-description">
+									<p>-</p>
+									<p><b>Invitation Letter</b></p>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/document/d/e/2PACX-1vR8sVNckvp5qZ2W3zJiekhquFS6AmmdLk83KWf6thTkLQU-vM0iTqt5ZOut5bDTJgS75EdwhaEjO9jR/pub?embedded=true"
+									></iframe>
+									<p><b>Exposition Text</b></p>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/document/d/e/2PACX-1vSiyNd1kb2YzsVFUXhgTD0C8EOitB87vVwbnI-Y8I2h6vl_ZSGzfRe2bL9dMqemg0NyZ7DcOaIRX3of/pub?embedded=true"
+									></iframe>
+									<p><b>Personal Letter</b></p>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/document/d/e/2PACX-1vSznDPUPhlzVZlgyEYfqcKFiet26Zdh-QiJElSuKvvm55NvLFDljVlHzmZ52hGhdrVD65bwMKVZRgIH/pub?embedded=true"
+									></iframe>
+									<p><b>Cause and Effect Text</b></p>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/document/d/e/2PACX-1vRjIcYFS-gW2ERRgNQh4ovRLeTsz011pH1RNgua7FanKXiZtNqBwEBB-ps0pY21s8K0F_Qj9I1jnBzJ/pub?embedded=true"
+									></iframe>
+									<p><b>Explanation Text</b></p>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+					</div>
+					<p>Kelompok B (Umum)</p>
+					<div class="grid-container">
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description2-7">
+								<h1>1. Seni Budaya</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content2-7">
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/document/d/e/2PACX-1vQrZA3mofC5vc1ZeUVE0tcbqag5VElD8HjiUctabcfo-mkvhrsUwDTpH52CYvs2qDyPWIBV0icDHtcw/pub?embedded=true"
+									></iframe>
+									<p>
+										Membuat alat untuk menyimpan 2 kotak tisu (dual) dari kotak
+										kardus bekas bersama 1 rekan teman saya.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description2-8">
+								<h1>2. Pendidikan Jasmani, Olahraga, dan Kesehatan</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content2-8">
+								<div class="sub-description">
+									<iframe
+										src="https://drive.google.com/file/d/183YKnQYLMNnX6_k1sooUo4A-vjHIuJFR/preview"
+										width="auto"
+										height="auto"
+										allow="autoplay"
+									></iframe>
+									<p>
+										Melakukan senam tabata yang dapat meningkatkan kesehatan
+										jasmani dan rohani.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description2-9">
+								<h1>3. Prakarya dan Kewirausahaan</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content2-9">
+								<div class="sub-description">
+									<iframe
+										src="https://drive.google.com/file/d/183YKnQYLMNnX6_k1sooUo4A-vjHIuJFR/preview"
+										width="auto"
+										height="auto"
+										allow="autoplay"
+									></iframe>
+									<p>
+										Melakukan senam tabata yang dapat meningkatkan kesehatan
+										jasmani dan rohani.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p>Kelompok C (Peminatan)</p>
+					<div class="grid-container">
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description2-10">
+								<h1>1. Matematika</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content2-10">
+								<div class="sub-description">
+									<div
+										style="
+											position: relative;
+											width: 100%;
+											height: 0;
+											padding-top: 250%;
+											padding-bottom: 0;
+											box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+											margin-top: 0;
+											margin-bottom: 0.9em;
+											overflow: hidden;
+											border-radius: 8px;
+											will-change: transform;
+										"
+									>
+										<iframe
+											loading="lazy"
+											style="
+												position: absolute;
+												width: 100%;
+												height: 100%;
+												top: 0;
+												left: 0;
+												border: none;
+												padding: 0;
+												margin: 0;
+											"
+											src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFkS9S-7jI&#x2F;olF47fECkP5Tojm91w-c8w&#x2F;view?embed"
+											allowfullscreen="allowfullscreen"
+											allow="fullscreen"
+										></iframe>
+									</div>
+									<p>Mengerjakan infografis tentang lingkaran.</p>
+								</div>
+								<div class="sub-description">
+									<div
+										style="
+											position: relative;
+											width: 100%;
+											height: 0;
+											padding-top: 250%;
+											padding-bottom: 0;
+											box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+											margin-top: 0;
+											margin-bottom: 0.9em;
+											overflow: hidden;
+											border-radius: 8px;
+											will-change: transform;
+										"
+									>
+										<iframe
+											loading="lazy"
+											style="
+												position: absolute;
+												width: 100%;
+												height: 100%;
+												top: 0;
+												left: 0;
+												border: none;
+												padding: 0;
+												margin: 0;
+											"
+											src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFkTO-b69E&#x2F;LkZb3TF7lv9e4hi7ubHl6Q&#x2F;view?embed"
+											allowfullscreen="allowfullscreen"
+											allow="fullscreen"
+										></iframe>
+									</div>
+									<p>Mengerjakan infografis tentang polinomial.</p>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/presentation/d/e/2PACX-1vR0ZEHmhJ-Hr_y8Oct35LanDnbscWG2MDDtj2WXT2h0brAld9IucdwhGxWII6c8H64n33l6BrQJia8c/embed?start=true&loop=true&delayms=3000"
+										frameborder="0"
+										width="auto"
+										height="auto"
+										allowfullscreen="true"
+										mozallowfullscreen="true"
+										webkitallowfullscreen="true"
+									></iframe>
+									<p>Membuat rangkuman catatan pelajaran Matematika Minat.</p>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description2-11">
+								<h1>2. Biologi</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content2-11">
+								<div class="sub-description">
+									<div
+										style="
+											position: relative;
+											width: 100%;
+											height: 0;
+											padding-top: 250%;
+											padding-bottom: 0;
+											box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+											margin-top: 0;
+											margin-bottom: 0.9em;
+											overflow: hidden;
+											border-radius: 8px;
+											will-change: transform;
+										"
+									>
+										<iframe
+											loading="lazy"
+											style="
+												position: absolute;
+												width: 100%;
+												height: 100%;
+												top: 0;
+												left: 0;
+												border: none;
+												padding: 0;
+												margin: 0;
+											"
+											src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFX-M4FFiE&#x2F;view?embed"
+											allowfullscreen="allowfullscreen"
+											allow="fullscreen"
+										></iframe>
+									</div>
+								</div>
+								<div class="sub-description">
+									<div
+										style="
+											position: relative;
+											width: 100%;
+											height: 0;
+											padding-top: 250%;
+											padding-bottom: 0;
+											box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+											margin-top: 0;
+											margin-bottom: 0.9em;
+											overflow: hidden;
+											border-radius: 8px;
+											will-change: transform;
+										"
+									>
+										<iframe
+											loading="lazy"
+											style="
+												position: absolute;
+												width: 100%;
+												height: 100%;
+												top: 0;
+												left: 0;
+												border: none;
+												padding: 0;
+												margin: 0;
+											"
+											src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFKMaF-gjo&#x2F;6inYs8v6uLj3I0iTtnLrQQ&#x2F;watch?embed"
+											allowfullscreen="allowfullscreen"
+											allow="fullscreen"
+										></iframe>
+									</div>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://drive.google.com/file/d/1nWq-LwyqIFmEBhVaF8h1NwHf1tXeZpp5/preview"
+										width="auto"
+										height="auto"
+										allow="autoplay"
+									></iframe>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description2-12">
+								<h1>3. Fisika</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content2-12">
+								<div class="sub-description">
+									<div
+										style="
+											position: relative;
+											width: 100%;
+											height: 0;
+											padding-top: 250%;
+											padding-bottom: 0;
+											box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+											margin-top: 0;
+											margin-bottom: 0.9em;
+											overflow: hidden;
+											border-radius: 8px;
+											will-change: transform;
+										"
+									>
+										<iframe
+											loading="lazy"
+											style="
+												position: absolute;
+												width: 100%;
+												height: 100%;
+												top: 0;
+												left: 0;
+												border: none;
+												padding: 0;
+												margin: 0;
+											"
+											src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFan6N6Qao&#x2F;view?embed"
+											allowfullscreen="allowfullscreen"
+											allow="fullscreen"
+										></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description2-13">
+								<h1>4. Kimia</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content2-13">
+								<div class="sub-description">
+									<div
+										style="
+											position: relative;
+											width: 100%;
+											height: 0;
+											padding-top: 56.25%;
+											padding-bottom: 0;
+											box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+											margin-top: 0;
+											margin-bottom: 0.9em;
+											overflow: hidden;
+											border-radius: 8px;
+											will-change: transform;
+										"
+									>
+										<iframe
+											loading="lazy"
+											style="
+												position: absolute;
+												width: 100%;
+												height: 100%;
+												top: 0;
+												left: 0;
+												border: none;
+												padding: 0;
+												margin: 0;
+											"
+											src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFR-GRCchs&#x2F;view?embed"
+											allowfullscreen="allowfullscreen"
+											allow="fullscreen"
+										></iframe>
+									</div>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/document/d/e/2PACX-1vSy483Dncat-5LF4L5u57vEHZQsqA7dP7PzwtTqFN8I8siZPpZrfEF_7KP7VnekoGCRGjSqpwxCGVi5/pub?embedded=true"
+									></iframe>
+									<p>
+										Artikel pembuatan produk untuk mengatasi kelaparan di
+										Indonesia.
+									</p>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description2-14">
+								<h1>5. Bahasa Mandarin</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content2-14">
+								<div class="sub-description">
+									<p>
+										Pembuatan kaligrafi puisi yang berjudul 登鹳雀楼 (Dēng guàn
+										què lóu ) yang dikarang oleh 王之渙 (Wang Zhihuan). Puisi
+										ini menceritakan tentang matahari yang terbenam di
+										pegunungan yang jauh, dengan sungai berwarna kuning yang
+										menyebar sampai ke laut, Kerinduan untuk melihat pemandangan
+										yang indah seribu mil lebih jauh, kamu hanya perlu naik satu
+										lantai (tingkat) lagi untuk melihat lebih jauh.
+									</p>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description2-15">
+								<h1>6. Informatika</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content2-15">
+								<div class="sub-description">
+									<div
+										style="
+											position: relative;
+											width: 100%;
+											height: 0;
+											padding-top: 250%;
+											padding-bottom: 0;
+											box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+											margin-top: 0;
+											margin-bottom: 0.9em;
+											overflow: hidden;
+											border-radius: 8px;
+											will-change: transform;
+										"
+									>
+										<iframe
+											loading="lazy"
+											style="
+												position: absolute;
+												width: 100%;
+												height: 100%;
+												top: 0;
+												left: 0;
+												border: none;
+												padding: 0;
+												margin: 0;
+											"
+											src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFW2RWts-M&#x2F;view?embed"
+											allowfullscreen="allowfullscreen"
+											allow="fullscreen"
+										></iframe>
+									</div>
+									<p><b>Infografis CSS</b></p>
+								</div>
+								<div class="sub-description">
+									<div
+										style="
+											position: relative;
+											width: 100%;
+											height: 0;
+											padding-top: 250%;
+											padding-bottom: 0;
+											box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+											margin-top: 0;
+											margin-bottom: 0.9em;
+											overflow: hidden;
+											border-radius: 8px;
+											will-change: transform;
+										"
+									>
+										<iframe
+											loading="lazy"
+											style="
+												position: absolute;
+												width: 100%;
+												height: 100%;
+												top: 0;
+												left: 0;
+												border: none;
+												padding: 0;
+												margin: 0;
+											"
+											src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFQ8l-pLoA&#x2F;view?embed"
+											allowfullscreen="allowfullscreen"
+											allow="fullscreen"
+										></iframe>
+									</div>
+									<p><b>Infografis Bahasa Pemrograman</b></p>
+								</div>
+								<div class="sub-description">
+									<div
+										style="
+											position: relative;
+											width: 100%;
+											height: 0;
+											padding-top: 56.25%;
+											padding-bottom: 0;
+											box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+											margin-top: 0;
+											margin-bottom: 0.9em;
+											overflow: hidden;
+											border-radius: 8px;
+											will-change: transform;
+										"
+									>
+										<iframe
+											loading="lazy"
+											style="
+												position: absolute;
+												width: 100%;
+												height: 100%;
+												top: 0;
+												left: 0;
+												border: none;
+												padding: 0;
+												margin: 0;
+											"
+											src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFRV3OTyd4&#x2F;8OOTlBmILqDl6Acw-UXn-g&#x2F;view?embed"
+											allowfullscreen="allowfullscreen"
+											allow="fullscreen"
+										></iframe>
+									</div>
+									<p><b>Infografis HTML</b></p>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/document/d/e/2PACX-1vQU3gJpGtvoP-H3v2x6kdC6uL6BcQjEau2CFLxxgq5jZirVQRdV2ix3kAUUdSx6M_0PrPC5TVtXnANW/pub?embedded=true"
+									></iframe>
+									<p>Membuat naskah dialog dubbing bersama kelompok.</p>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+					</div>
+				</div>
+			</section>
+			<section class="third-content">
+				<h1>Kelas 12</h1>
+				<div class="wrapper">
+					<p>Kelompok A (Umum)</p>
+					<!--  -->
+					<div class="grid-container">
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description3-1">
+								<h1>1. Pendidikan Agama Katolik dan Budi Pekerti</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content3-1">
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/presentation/d/e/2PACX-1vT-oHw_8cCJqfXRUWjHp8ZxUjs36aAaC-CMio3UovFlUkdK-ZtueynWa-UtA0zfCSyedMJu-IeTfAsB/embed?start=true&loop=true&delayms=3000"
+										frameborder="0"
+										width="auto"
+										height="auto"
+										allowfullscreen="true"
+										mozallowfullscreen="true"
+										webkitallowfullscreen="true"
+									></iframe>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/document/d/e/2PACX-1vSezUKCKvvSqtY6vfGi282Vk9JoGW1f26zlmv7ClzAi0TmI_je4sewv_qTadRQSGB95zYv3uUHnE5sK/pub?embedded=true"
+									></iframe>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description3-2">
+								<h1>2. Pendidikan Pancasila dan Kewarganegaraan</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content3-2">
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSuiHYZIVdOt54cpWvt-pDtlpYh6OLzgkgXKzH1Ch9te0OCO33po9CZQtXdvtOlaa-lnDr2VRz78ze-/pubhtml?widget=true&amp;headers=false"
+									></iframe>
+									<p>
+										Melakukan identifikasi Hak dan Kewajiban dalam Pancasila.
+									</p>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/document/d/e/2PACX-1vT_L-H_qWKa0TII8xL9SbIFM48TsmtcR72okgKdtwkr_pE1fZ8PmNkcdENJY6Kjwg/pub?embedded=true"
+									></iframe>
+									<p>Mengerjakan tugas yang diberikan.</p>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description3-3">
+								<h1>3. Bahasa Indonesia</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content3-3">
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/document/d/e/2PACX-1vTjqsiNWdwiJXdqq6Bjpbq2VzyNpZhqYJ6GURlnrbUnpfyY84MvEGW9ys8UIv5TPRc4EkYaWphNkCHh/pub?embedded=true"
+									></iframe>
+									<p>Mengerjakan soal.</p>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/document/d/e/2PACX-1vSBhKstljl7PxCZHQ19t4mr7AnjZdDR5mtWqRjKA8eV8WI0Cg-qLoJ7bBm3Ah1DiNzEhcGuuTFOvD78/pub?embedded=true"
+									></iframe>
+									<p>Mengerjakan soal.</p>
+								</div>
+								<div class="sub-description">
+									<div
+										style="
+											position: relative;
+											width: 100%;
+											height: 0;
+											padding-top: 141.4286%;
+											padding-bottom: 0;
+											box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+											margin-top: 0;
+											margin-bottom: 0.9em;
+											overflow: hidden;
+											border-radius: 8px;
+											will-change: transform;
+										"
+									>
+										<iframe
+											loading="lazy"
+											style="
+												position: absolute;
+												width: 100%;
+												height: 100%;
+												top: 0;
+												left: 0;
+												border: none;
+												padding: 0;
+												margin: 0;
+											"
+											src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFqNtt89hY&#x2F;eD5Yx1_4n6SuCvV3SbvvEw&#x2F;view?embed"
+											allowfullscreen="allowfullscreen"
+											allow="fullscreen"
+										>
+										</iframe>
+									</div>
+									<p>Membuat CV lamaran pekerjaan.</p>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description3-4">
+								<h1>4. Matematika</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content3-4">
+								<div class="sub-description">-</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description3-5">
+								<h1>5. Sejarah</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content3-5">
+								<div class="sub-description">
+									<div
+										style="
+											position: relative;
+											width: 100%;
+											height: 0;
+											padding-top: 56.25%;
+											padding-bottom: 0;
+											box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+											margin-top: 0;
+											margin-bottom: 0.9em;
+											overflow: hidden;
+											border-radius: 8px;
+											will-change: transform;
+										"
+									>
+										<iframe
+											loading="lazy"
+											style="
+												position: absolute;
+												width: 100%;
+												height: 100%;
+												top: 0;
+												left: 0;
+												border: none;
+												padding: 0;
+												margin: 0;
+											"
+											src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFqRwBc59s&#x2F;uaAwyB-4uqqk2VZEQTPPlQ&#x2F;view?embed"
+											allowfullscreen="allowfullscreen"
+											allow="fullscreen"
+										>
+										</iframe>
+									</div>
+									<p>Sejarah DI/TII Sulawesi Selatan</p>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description3-6">
+								<h1>6. Bahasa Inggris</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content3-6">
+								<div class="sub-description">
+									<div
+										style="
+											position: relative;
+											width: 100%;
+											height: 0;
+											padding-top: 141.4286%;
+											padding-bottom: 0;
+											box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+											margin-top: 0;
+											margin-bottom: 0.9em;
+											overflow: hidden;
+											border-radius: 8px;
+											will-change: transform;
+										"
+									>
+										<iframe
+											loading="lazy"
+											style="
+												position: absolute;
+												width: 100%;
+												height: 100%;
+												top: 0;
+												left: 0;
+												border: none;
+												padding: 0;
+												margin: 0;
+											"
+											src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFtEjr5FbE&#x2F;HGWygzFsuwAU0DCgHT1F6g&#x2F;view?embed"
+											allowfullscreen="allowfullscreen"
+											allow="fullscreen"
+										>
+										</iframe>
+									</div>
+									<p>Making a CV.</p>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/document/d/e/2PACX-1vQ5NnCYNnkeZZTXf1v6h1cRiq_9egGEv5-QEPHSrmEJVEQkX9WaeiaGi0hik5-Db-QCfGyfd5p8uzOH/pub?embedded=true"
+									></iframe>
+									<p><b>News Items</b></p>
+								</div>
+								<div class="sub-description">
+									<div
+										style="
+											position: relative;
+											width: 100%;
+											height: 0;
+											padding-top: 56.25%;
+											padding-bottom: 0;
+											box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+											margin-top: 0;
+											margin-bottom: 0.9em;
+											overflow: hidden;
+											border-radius: 8px;
+											will-change: transform;
+										"
+									>
+										<iframe
+											loading="lazy"
+											style="
+												position: absolute;
+												width: 100%;
+												height: 100%;
+												top: 0;
+												left: 0;
+												border: none;
+												padding: 0;
+												margin: 0;
+											"
+											src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFwW3PhYj4&#x2F;kE9EOeCtqYdFDJCWX_Unzw&#x2F;view?embed"
+											allowfullscreen="allowfullscreen"
+											allow="fullscreen"
+										>
+										</iframe>
+									</div>
+									<p><b>Caption Text</b></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--  -->
+					<p>Kelompok B (Umum)</p>
+					<div class="grid-container">
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description3-7">
+								<h1>1. Seni Budaya</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content3-7">
+								<div class="sub-description">
+									<div
+										style="
+											position: relative;
+											width: 100%;
+											height: 0;
+											padding-top: 56.25%;
+											padding-bottom: 0;
+											box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+											margin-top: 0;
+											margin-bottom: 0.9em;
+											overflow: hidden;
+											border-radius: 8px;
+											will-change: transform;
+										"
+									>
+										<iframe
+											loading="lazy"
+											style="
+												position: absolute;
+												width: 100%;
+												height: 100%;
+												top: 0;
+												left: 0;
+												border: none;
+												padding: 0;
+												margin: 0;
+											"
+											src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF6PZf2AjA&#x2F;xeZEkQ2gERShxooQWRm_6A&#x2F;view?embed"
+											allowfullscreen="allowfullscreen"
+											allow="fullscreen"
+										>
+										</iframe>
+									</div>
+									<p>Presentasi rancangan naskah drama.</p>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/document/d/e/2PACX-1vRjOKuqaD-lufuqlybD42nxFi3zR6krOB-z0aaFlDKYoYNEy0yOba46knRvwIvKBJUBq8qGEGaEXG7e/pub?embedded=true"
+									></iframe>
+									<p>Membuat naskah teks drama.</p>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description3-8">
+								<h1>2. Pendidikan Jasmani, Olahraga, dan Kesehatan</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content3-8">
+								<div class="sub-description">
+									<p>
+										Melakukan senam bersama kelompok, melakukan lari selama
+										10-12 menit untuk mencapai tujuan minimal, melakukan
+										<i>under-ring</i> sebanyak mungkin dalam kurun waktu 1
+										menit.
+									</p>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description3-9">
+								<h1>3. Prakarya dan Kewirausahaan</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content3-9">
+								<div class="sub-description">-</div>
+							</div>
+						</div>
+					</div>
+					<!--  -->
+					<p>Kelompok C (Peminatan)</p>
+					<div class="grid-container">
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description3-10">
+								<h1>1. Matematika</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content3-10">
+								<div class="sub-description">
+									<p>
+										Membuat sebuah rangkuman mengenai materi Distribusi Normal.
+										<a
+											href="https://drive.google.com/file/d/1STSHKfCIut6nBt2C_X3d-GOR78NVVe1Q/view"
+											>Click here!</a
+										>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description3-11">
+								<h1>2. Biologi</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content3-11">
+								<div class="sub-description">
+									<div
+										style="
+											position: relative;
+											width: 100%;
+											height: 0;
+											padding-top: 56.25%;
+											padding-bottom: 0;
+											box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+											margin-top: 1.6em;
+											margin-bottom: 0.9em;
+											overflow: hidden;
+											border-radius: 8px;
+											will-change: transform;
+										"
+									>
+										<iframe
+											loading="lazy"
+											style="
+												position: absolute;
+												width: 100%;
+												height: 100%;
+												top: 0;
+												left: 0;
+												border: none;
+												padding: 0;
+												margin: 0;
+											"
+											src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFs1mb4Tzk&#x2F;view?embed"
+											allowfullscreen="allowfullscreen"
+											allow="fullscreen"
+										>
+										</iframe>
+									</div>
+									<p>
+										Presentasi pembuatan akuaponik ikan lele dan tanaman
+										kangkung.
+									</p>
+								</div>
+								<div class="sub-description">
+									<div
+										style="
+											position: relative;
+											width: 100%;
+											height: 0;
+											padding-top: 250%;
+											padding-bottom: 0;
+											box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+											margin-top: 1.6em;
+											margin-bottom: 0.9em;
+											overflow: hidden;
+											border-radius: 8px;
+											will-change: transform;
+										"
+									>
+										<iframe
+											loading="lazy"
+											style="
+												position: absolute;
+												width: 100%;
+												height: 100%;
+												top: 0;
+												left: 0;
+												border: none;
+												padding: 0;
+												margin: 0;
+											"
+											src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFpmbrmKqs&#x2F;4jPATZJXeeiVVQgj8RyL-g&#x2F;view?embed"
+											allowfullscreen="allowfullscreen"
+											allow="fullscreen"
+										>
+										</iframe>
+									</div>
+									<p>Ide khayalan 'Thermal Footprint Goggles'</p>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/document/d/e/2PACX-1vT3pKo_Pa1Fn1zEsaUhxp00-0k1eu95ol7iqLvYrUHLvPqneQ_JQwLPgAc1u2eqkAvfT0ldeqcFx0ly/pub?embedded=true"
+									></iframe>
+									<p>Laporan fermentasi acar timun wortel.</p>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description3-12">
+								<h1>3. Fisika</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content3-12">
+								<div class="sub-description">
+									<p>
+										Menjelaskan apa itu 'Home Biogas'.
+										<a
+											href="https://drive.google.com/file/d/1_MNfNy7T1NhQbqdEZkeb1erwoZWa8i6o/view?usp=sharing"
+											>Click here!</a
+										>
+									</p>
+								</div>
+								<div class="sub-description">
+									<p>
+										Melakukan presentasi bersama kelompok mengenai materi
+										'Radiasi Gelombang Elektromagnetik'.
+										<a
+											href="https://www.canva.com/design/DAFtei1RZJk/n8IKmXvKOLVDZOfpexrDjA/edit?utm_content=DAFtei1RZJk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+											>Click here!</a
+										>
+									</p>
+								</div>
+								<div class="sub-description">
+									<p>
+										Selain teori, saya bersama kelompok saya juga melakukan
+										praktikum fisika.
+									</p>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description3-13">
+								<h1>4. Kimia</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content3-13">
+								<div class="sub-description">
+									<iframe
+										src="https://docs.google.com/document/d/e/2PACX-1vQJvRxm3rvHDsWZ5rYw1duKLNoTB_uAHXzK3QhdTPC1-uWvunKmybltWzmsRDkpDbUqxaFhYbMZ5R5r/pub?embedded=true"
+									></iframe>
+									<p>Laporan praktikum kimia bersama kelompok.</p>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description3-14">
+								<h1>5. Bahasa Mandarin</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content3-14">
+								<div class="sub-description">
+									<p>
+										Infografis pameran hari raya Imlek.
+										<a
+											href="https://www.canva.com/design/DAF6GD22Rpc/Qob3pWPEpW8L18ppC6dSTA/edit?utm_content=DAF6GD22Rpc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+											>Click here!</a
+										>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						<div class="grid-container-child">
+							<div class="grid-content-description" id="description3-15">
+								<h1>6. Informatika</h1>
+								<p>Click to expand!</p>
+							</div>
+							<span></span>
+							<div class="grid-content" id="content3-15">
+								<div class="sub-description">
+									<iframe
+										src="https://drive.google.com/file/d/1GPECEIDOpmF9sG78Y-RuINNp2IX7Piro/preview"
+										width="auto"
+										height="auto"
+										allow="autoplay"
+									></iframe>
+									<p>
+										Melakukan pengeditan gambar dengan menggunakan 'Adobe
+										Photoshop'.
+									</p>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://drive.google.com/file/d/1ms5dgP9i-iCnxFfHgY-bDJEoSjDFhEn5/preview"
+										width="auto"
+										height="auto"
+										allow="autoplay"
+									></iframe>
+									<p>
+										Melakukan pembuatan gambar dengan menggunakan 'Adobe
+										Photoshop'.
+									</p>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://drive.google.com/file/d/1REARJGyQYVcZTW0dIUQf0Ru7ADD2fxGP/preview"
+										width="auto"
+										height="auto"
+										allow="autoplay"
+									></iframe>
+									<p>
+										Melakukan pengeditan gambar dengan menggunakan 'Adobe
+										Photoshop'.
+									</p>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://drive.google.com/file/d/10FMyEG2mR62HCVLhoWHMF6m544W5laWa/preview"
+										width="auto"
+										height="auto"
+										allow="autoplay"
+									></iframe>
+									<p>
+										Melakukan pembuatan gambar dengan menggunakan 'Adobe
+										Photoshop'.
+									</p>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://drive.google.com/file/d/1inNAOu4g6I6wwUsDa9OqeZUe4476ogDA/preview"
+										width="auto"
+										height="auto"
+										allow="autoplay"
+									></iframe>
+									<p>
+										Melakukan pengeditan gambar dengan menggunakan 'Adobe
+										Photoshop'.
+									</p>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://drive.google.com/file/d/1WOoZ6tqy5pX6C637VYtx3yHmlpY6qqYH/preview"
+										width="auto"
+										height="auto"
+										allow="autoplay"
+									></iframe>
+									<p>
+										Melakukan pembuatan tulisan dengan menggunakan 'Adobe
+										Photoshop'.
+									</p>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://drive.google.com/file/d/1VtvPvSXEv66C-y3O2LBJMzlBEgNwR83V/preview"
+										width="auto"
+										height="auto"
+										allow="autoplay"
+									></iframe>
+									<p>
+										Melakukan pembuatan gelembung dengan menggunakan 'Adobe
+										Photoshop'.
+									</p>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://drive.google.com/file/d/1vqsRGa1z_roZ8myc4OhG5ZQmDAXy8WR1/preview"
+										width="auto"
+										height="auto"
+										allow="autoplay"
+									></iframe>
+									<p>Membuat infografis bahasa pemrograman.</p>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://drive.google.com/file/d/1CbNz-zpe9ZJzKm9JBSfB5wQWeYez8TSW/preview"
+										width="auto"
+										height="auto"
+										allow="autoplay"
+									></iframe>
+									<p>Membuat infografis Microsoft Visual Basic 6.0</p>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://drive.google.com/file/d/1CbNz-zpe9ZJzKm9JBSfB5wQWeYez8TSW/preview"
+										width="auto"
+										height="auto"
+										allow="autoplay"
+									></iframe>
+									<p>Membuat timeline tentang sejarah perkembangan komputer.</p>
+								</div>
+								<div class="sub-description">
+									<iframe
+										src="https://drive.google.com/file/d/1Hve5JUtP6w_5N5CdpiL7OVvj_Qf8XPpd/preview"
+										width="auto"
+										height="auto"
+										allow="autoplay"
+									></iframe>
+									<p>Membuat mindmap tentang alat jaringan komputer.</p>
+								</div>
+								<div class="sub-description">
+									<div
+										style="
+											position: relative;
+											width: 100%;
+											height: 0;
+											padding-top: 250%;
+											padding-bottom: 0;
+											box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+											margin-top: 0;
+											margin-bottom: 0.9em;
+											overflow: hidden;
+											border-radius: 8px;
+											will-change: transform;
+										"
+									>
+										<iframe
+											loading="lazy"
+											style="
+												position: absolute;
+												width: 100%;
+												height: 100%;
+												top: 0;
+												left: 0;
+												border: none;
+												padding: 0;
+												margin: 0;
+											"
+											src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF9MbF2RTw&#x2F;LeDuuB1uRpt0-h1hDuBMnA&#x2F;view?embed"
+											allowfullscreen="allowfullscreen"
+											allow="fullscreen"
+										>
+										</iframe>
+									</div>
+									<p>Membuat infografis tentang jenis jaringan komputer.</p>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+	<script
+		src="https://kit.fontawesome.com/2e9ce271b4.js"
+		crossorigin="anonymous"
+	></script>
+	<script src="../functions/main/footer.js"></script>
+	<script defer src="../functions/main/progress-bar.js"></script>
+	<script src="../functions/main/dark-light-mode.js" defer></script>
+	<script src="../functions/pages/studies.js"></script>
 
-  <!-- Include the scripts in the correct order -->
-  <script type="module" src="../functions/main/footer.js"></script>
-  <script type="module" src="../functions/pages/index.js"></script>
-  <script type="module" src="../functions/main/scrollFunctions.js"></script>
+	<!-- Include the scripts in the correct order -->
+	<script type="module" src="../functions/main/footer.js"></script>
+	<script type="module" src="../functions/pages/index.js"></script>
+	<script type="module" src="../functions/main/scrollFunctions.js"></script>
 </html>

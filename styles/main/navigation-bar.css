@@ -79,6 +79,10 @@ header > nav > ul > li > a:after {
   width: 0;
 }
 
+body.dark-mode header > nav > ul > li > a:after {
+  background: #fff;
+}
+
 header > nav > ul > li a:hover:after {
   width: 100%;
   left: 0;
