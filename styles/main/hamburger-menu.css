@@ -1,136 +1,157 @@
 * {
-  /* border: 1px black solid; */
+	/* border: 1px black solid; */
 }
 
 .hamburger-menu {
-  /* position: relative; */
-  display: none;
+	/* position: relative; */
+	display: none;
 }
 
 .hamburger-menu > .menu_checkbox {
-  display: none;
+	display: none;
 }
 
 .hamburger-menu > .menu_toggle {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
 }
 
 .hamburger-menu > .menu_toggle > i {
-  font-size: 2rem;
-  text-align: center;
-  color: var(--navigation-hyperlink-color);
+	font-size: 2rem;
+	text-align: center;
+	color: var(--navigation-hyperlink-color);
 }
 
 .hamburger-menu > .menu_overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100vh;
-  bottom: 0;
-  z-index: 11;
-  display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100vh;
+	bottom: 0;
+	z-index: 11;
+	display: none;
 }
 
 .hamburger-menu > .menu_checkbox:checked + .menu_toggle {
-  transform: matrix(0, 1, 1, 0, 0, 0);
-  transition: 0.4s;
+	transform: matrix(0, 1, 1, 0, 0, 0);
+	transition: 0.4s;
 }
 
 .hamburger-menu
-  > .menu_checkbox:checked
-  ~ .hamburger-content
-  > .hamburger-content-header
-  > .menu_toggle__close {
-  animation: rotation 1.5s 1;
+	> .menu_checkbox:checked
+	~ .hamburger-content
+	> .hamburger-content-header
+	> .menu_toggle__close {
+	animation: rotation 1.5s 1;
 }
 
 .hamburger-menu
-  > .menu_checkbox:not(:checked)
-  ~ .hamburger-content
-  > .hamburger-content-header
-  > .menu_toggle__close {
-  transform: matrix(0, 1, 1, 0, 0, 0);
-  transition: 0.2s;
+	> .menu_checkbox:not(:checked)
+	~ .hamburger-content
+	> .hamburger-content-header
+	> .menu_toggle__close {
+	transform: matrix(0, 1, 1, 0, 0, 0);
+	transition: 0.2s;
 }
 
 @keyframes rotation {
-  0% {
-    transform: rotate(45deg);
-  }
-  25% {
-    transform: rotate(90deg);
-  }
-  50% {
-    transform: rotate(45deg);
-  }
-  75% {
-    transform: rotate(80deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
+	0% {
+		transform: rotate(45deg);
+	}
+	25% {
+		transform: rotate(90deg);
+	}
+	50% {
+		transform: rotate(45deg);
+	}
+	75% {
+		transform: rotate(80deg);
+	}
+	100% {
+		transform: rotate(0);
+	}
 }
 
 .hamburger-menu > .menu_checkbox:not(:checked) + .menu_toggle {
-  transition: 0.4s;
+	transition: 0.4s;
 }
 
 .hamburger-menu > .menu_checkbox:checked ~ .menu_overlay {
-  display: block;
-  background-color: rgba(0, 0, 0, 0.5);
+	display: block;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hamburger-menu > .hamburger-content {
-  left: -400px;
-  top: 0;
-  position: absolute;
-  transition: 0.5s ease;
-  background-color: var(--navigation-main-color);
-  width: 300px;
-  padding: 0;
-  height: 100vh;
-  z-index: 12;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+	left: -400px;
+	top: 0;
+	position: absolute;
+	transition: 0.5s ease;
+	background-color: var(--navigation-main-color);
+	width: 300px;
+	padding: 0;
+	height: 100vh;
+	z-index: 12;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
 }
 
 .hamburger-menu > .menu_checkbox:checked ~ .hamburger-content {
-  left: 0;
+	left: 0;
 }
 
 /* Hamburger Menu Content */
 
 .hamburger-content > .hamburger-content-header {
-  padding: 1rem 2rem 1rem 1.5rem;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
+	padding: 1rem 2rem 1rem 1.5rem;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5rem;
+}
+
+.hamburger-content > .hamburger-content-main {
+	padding: 1rem 2rem 1rem 1.5rem;
+	display: flex;
+	align-items: start;
+	justify-content: start;
+	gap: 0.5rem;
+	font-size: 1.5rem;
+	flex-direction: column;
+}
+
+.hamburger-content > .hamburger-content-main > span > a {
+	text-decoration: none;
+	color: white;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	transition: 0.4s ease;
+}
+
+.hamburger-content > .hamburger-content-main > span > a:hover {
+	color: #333;
 }
 
 .hamburger-content > .hamburger-content-header > span {
-  font-size: 2rem;
-  color: white;
+	font-size: 2rem;
+	color: white;
 }
 
 .hamburger-content > .hamburger-content-header > .menu_toggle__close {
-  cursor: pointer;
-  width: fit-content;
-  height: fit-content;
-  color: #fff;
-  transition: 0.4s ease-in-out;
+	cursor: pointer;
+	width: fit-content;
+	height: fit-content;
+	color: #fff;
+	transition: 0.4s ease-in-out;
 }
 
 .hamburger-content > .hamburger-content-header > .menu_toggle__close:hover {
-  color: #333;
+	color: #333;
 }
 
 .hamburger-content > .hamburger-content-header > .menu_toggle__close > i {
-  font-size: 2rem;
-  text-align: center;
+	font-size: 2rem;
+	text-align: center;
 }

@@ -1,301 +1,301 @@
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body > main > section {
-  overflow-x: hidden;
-  /* border: 1px black solid; */
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	overflow-x: hidden;
+	/* border: 1px black solid; */
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* First Section */
 body > main > .first-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* background: linear-gradient(to right, #1f242d, #3f4653); */
-  min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* background: linear-gradient(to right, #1f242d, #3f4653); */
+	min-height: 100vh;
 }
 
 .first-section > h1 {
-  color: #23272a;
-  font-size: 4rem;
-  margin: 0;
+	color: #23272a;
+	font-size: 4rem;
+	margin: 0;
 }
 
 .first-section > p {
-  color: #23272a;
-  font-size: 1.5rem;
+	color: #23272a;
+	font-size: 1.5rem;
 }
 
 /* Second Section */
 body > main > .second-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* background: linear-gradient(to right, #1f242d, #3f4653); */
-  min-height: 100vh;
-  padding: 2rem 12rem;
-  text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* background: linear-gradient(to right, #1f242d, #3f4653); */
+	min-height: 100vh;
+	padding: 2rem 12rem;
+	text-align: center;
 }
 
 .second-section > h1 {
-  color: #23272a;
-  font-size: 4rem;
-  margin: 0;
+	color: #23272a;
+	font-size: 4rem;
+	margin: 0;
 }
 
 .second-section > p {
-  color: #23272a;
-  font-size: 1.5rem;
+	color: #23272a;
+	font-size: 1.5rem;
 }
 
 /* Third Section */
 body > main > .third-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* background: linear-gradient(to right, #1f242d, #3f4653); */
-  min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* background: linear-gradient(to right, #1f242d, #3f4653); */
+	min-height: 100vh;
 }
 
 .third-section > h1 {
-  color: #23272a;
-  font-size: 4rem;
-  margin: 0;
+	color: #23272a;
+	font-size: 4rem;
+	margin: 0;
 }
 
 .third-section > p {
-  color: #23272a;
-  font-size: 1.5rem;
+	color: #23272a;
+	font-size: 1.5rem;
 }
 
 /* Animate On Scroll */
 section .animateOnScroll {
-  transition: 1s;
+	transition: 1s;
 }
 
 /* First Section Animation */
 .first-section .animateOnScroll {
-  transform: translateX(-100%);
-  opacity: 0;
+	transform: translateX(-100%);
+	opacity: 0;
 }
 
 .first-section.show-animateOnScroll .animateOnScroll {
-  transform: translateX(0);
-  opacity: 1;
+	transform: translateX(0);
+	opacity: 1;
 }
 
 .first-section .pictureAnimate {
-  top: 120%;
-  right: 10%;
-  opacity: 1;
-  transition: 2s;
+	top: 120%;
+	right: 10%;
+	opacity: 1;
+	transition: 2s;
 }
 
 .first-section.show-animateOnScroll .pictureAnimate {
-  top: 0;
-  right: 70%;
-  opacity: 0;
+	top: 0;
+	right: 70%;
+	opacity: 0;
 }
 
 /* Second Section Animation */
 .second-section .animateOnScroll {
-  transform: translateX(100%);
-  opacity: 0;
+	transform: translateX(100%);
+	opacity: 0;
 }
 
 .second-section.show-animateOnScroll .animateOnScroll {
-  transform: translateX(0);
-  opacity: 1;
+	transform: translateX(0);
+	opacity: 1;
 }
 
 .second-section .pictureAnimate {
-  top: 0;
-  left: 40%;
-  transition: 2s;
-  /* opacity: 0; */
+	top: 0;
+	left: 40%;
+	transition: 2s;
+	/* opacity: 0; */
 }
 
 .second-section.show-animateOnScroll .pictureAnimate {
-  top: 130%;
-  left: 0%;
-  /* opacity: 1; */
-  animation: opacity 3s 1, rotate_second 2s 1;
+	top: 130%;
+	left: 0%;
+	/* opacity: 1; */
+	animation: opacity 3s 1, rotate_second 2s 1;
 }
 
 /* Third Section Animation */
 .third-section .animateOnScroll {
-  transform: translateX(100%);
-  opacity: 0;
+	transform: translateX(100%);
+	opacity: 0;
 }
 
 .third-section.show-animateOnScroll .animateOnScroll {
-  transform: translateX(0);
-  opacity: 1;
+	transform: translateX(0);
+	opacity: 1;
 }
 
 /* Image */
 .first-section > .picture {
-  aspect-ratio: 1 / 1;
-  width: 250px;
-  position: absolute;
-  transform: rotate(30deg);
-  animation: rotate_first 5s infinite;
-  background: url("https://giffiles.alphacoders.com/213/213921.gif");
-  background-size: contain;
-  object-fit: contain;
-  background-position: center;
+	aspect-ratio: 1 / 1;
+	width: 250px;
+	position: absolute;
+	transform: rotate(30deg);
+	animation: rotate_first 5s infinite;
+	background: url("https://giffiles.alphacoders.com/213/213921.gif");
+	background-size: contain;
+	object-fit: contain;
+	background-position: center;
 }
 
 @keyframes rotate_first {
-  0% {
-    transform: rotate(0) rotateY(90deg);
-  }
-  10% {
-    transform: rotate(45deg);
-  }
-  20% {
-    transform: rotate(-30deg);
-    filter: brightness(1);
-  }
-  30% {
-    transform: rotate(30deg);
-  }
-  40% {
-    transform: rotate(-15deg);
-    filter: brightness(1);
-  }
-  50% {
-    transform: rotate(15deg) rotateY(90deg);
-    filter: brightness(0.1);
-  }
-  60% {
-    transform: rotate(-10deg);
-  }
-  70% {
-    transform: rotate(10deg);
-    filter: brightness(1);
-  }
-  80% {
-    transform: rotate(0);
-  }
-  90% {
-    transform: rotate(15deg);
-    filter: brightness(1);
-  }
-  100% {
-    transform: rotate(0) rotateY(90deg);
-    filter: brightness(0.1);
-  }
+	0% {
+		transform: rotate(0) rotateY(90deg);
+	}
+	10% {
+		transform: rotate(45deg);
+	}
+	20% {
+		transform: rotate(-30deg);
+		filter: brightness(1);
+	}
+	30% {
+		transform: rotate(30deg);
+	}
+	40% {
+		transform: rotate(-15deg);
+		filter: brightness(1);
+	}
+	50% {
+		transform: rotate(15deg) rotateY(90deg);
+		filter: brightness(0.1);
+	}
+	60% {
+		transform: rotate(-10deg);
+	}
+	70% {
+		transform: rotate(10deg);
+		filter: brightness(1);
+	}
+	80% {
+		transform: rotate(0);
+	}
+	90% {
+		transform: rotate(15deg);
+		filter: brightness(1);
+	}
+	100% {
+		transform: rotate(0) rotateY(90deg);
+		filter: brightness(0.1);
+	}
 
-  0%,
-  50% {
-    background: url("https://i.pinimg.com/originals/96/91/28/9691288a3fadba6a8e6173d4eea20488.jpg");
-    background-size: contain;
-    object-fit: contain;
-    background-position: center;
-  }
+	0%,
+	50% {
+		background: url("https://th.bing.com/th/id/OIP.qw42y3S9KyR2Wn9JVAWArgHaHa?rs=1&pid=ImgDetMain");
+		background-size: contain;
+		object-fit: contain;
+		background-position: center;
+	}
 
-  51%,
-  100% {
-    background: url("https://giffiles.alphacoders.com/213/213921.gif");
-    background-size: contain;
-    object-fit: contain;
-    background-position: center;
-  }
+	51%,
+	100% {
+		background: url("https://i.pinimg.com/originals/a3/f7/bc/a3f7bc433851a324c97bfc7f933a71a9.jpg");
+		background-size: contain;
+		object-fit: contain;
+		background-position: center;
+	}
 
-  0%,
-  100% {
-    border: 4px red solid;
-    box-shadow: 4px 4px 4px rgba(0, 0%, 0%, 0.6);
-  }
-  33% {
-    border: 4px blue solid;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
-  }
-  66% {
-    border: 4px green solid;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-  }
+	0%,
+	100% {
+		border: 4px red solid;
+		box-shadow: 4px 4px 4px rgba(0, 0%, 0%, 0.6);
+	}
+	33% {
+		border: 4px blue solid;
+		box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+	}
+	66% {
+		border: 4px green solid;
+		box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+	}
 }
 
 @keyframes rotate_second {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(390deg);
-  }
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(390deg);
+	}
 }
 
 .second-section > .picture {
-  opacity: 0;
-  aspect-ratio: 3 / 4;
-  width: 300px;
-  position: absolute;
-  transform: rotate(30deg);
-  background: url("https://www.anime-planet.com/images/characters/delta-kage-no-jitsuryokusha-ni-naritakute-164042.jpg");
-  background-size: contain;
-  object-fit: contain;
-  background-position: center;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+	opacity: 0;
+	aspect-ratio: 3 / 4;
+	width: 300px;
+	position: absolute;
+	transform: rotate(30deg);
+	background: linear-gradient(to bottom, #333, #222);
+	background-size: contain;
+	object-fit: contain;
+	background-position: center;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
 }
 
 @keyframes opacity {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
 }
 
 /* Third Section Description - Strength & Weakness */
 .third-section-description {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  margin-top: 1.5rem;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-  height: 100%;
-  width: 50%;
-  column-gap: 2rem;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin-top: 1.5rem;
+	justify-content: center;
+	align-items: center;
+	width: fit-content;
+	height: 100%;
+	width: 50%;
+	column-gap: 2rem;
 }
 
 .third-section-description-strength,
 .third-section-description-weakness {
-  display: flex;
-  flex-direction: column;
-  border-radius: 30px 30px 30px 30px;
-  height: 100%;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-  padding: 1.5rem 2rem 6rem 2rem;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(to top, #1f242d, #3f4653);
+	display: flex;
+	flex-direction: column;
+	border-radius: 30px 30px 30px 30px;
+	height: 100%;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+	padding: 1.5rem 2rem 6rem 2rem;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	background: linear-gradient(to top, #1f242d, #3f4653);
 }
 
 .third-section-description-strength > p:first-child,
 .third-section-description-weakness > p:first-child {
-  font-size: 2rem;
-  color: #fff;
-  font-weight: bold;
-  text-align: center;
-  margin: 0;
+	font-size: 2rem;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	margin: 0;
 }
 
 .third-section-description-strength > ul,
 .third-section-description-weakness > ul {
-  font-size: 1.5rem;
-  color: #fff;
-  margin: 1rem 0 0 0;
+	font-size: 1.5rem;
+	color: #fff;
+	margin: 1rem 0 0 0;
 }
 
 .third-section-description-strength > ul > li,
 .third-section-description-weakness > ul > li {
-  margin: 0.5rem 0;
+	margin: 0.5rem 0;
 }
