@@ -101,3 +101,98 @@ footer > p {
 footer {
   height: 40vh;
 }
+
+/* Footer */
+footer {
+  margin-top: 4rem;
+  padding: 5rem 1.5rem;
+}
+
+.footer-social {
+  gap: 1.5rem;
+}
+
+.footer-social > li > i {
+  font-size: 2.5rem;
+}
+
+.footer-social > li:hover {
+  margin-top: -1.5rem;
+}
+
+.footer-menu {
+  gap: 1.5rem;
+}
+
+.footer-menu > li {
+  font-size: 1.5rem;
+}
+
+footer > p {
+  font-size: 1.1rem;
+  margin-top: 0.8rem;
+}
+
+footer {
+  height: 40vh;
+}
+
+/* Studies Page */
+.first-content,
+.second-content,
+.third-content {
+  padding: 0.3rem 1.2rem;
+}
+
+.first-content > h1,
+.second-content > h1,
+.third-content > h1 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  padding: 0.3rem 1.2rem;
+}
+
+.wrapper {
+  width: 90%;
+}
+
+.wrapper > p {
+  margin: 1rem 0;
+  padding-inline: 1rem;
+  font-size: 1.2rem;
+}
+
+.grid-container-child {
+  padding: 0.3rem 1.2rem;
+}
+
+.grid-container-child > span {
+  padding-bottom: 1.5px;
+}
+
+.grid-container-child > .grid-content-description {
+  gap: 1.2rem;
+}
+
+.grid-content {
+  padding: 0.5rem 0;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.grid-container-child > .grid-content img {
+  max-width: 300px;
+}
+
+.sub-description > p {
+  margin: 0.3rem auto;
+  font-size: 1rem;
+}
+
+.grid-content-description > h1 {
+  font-size: 1rem;
+}
+
+.grid-content-description > p {
+  font-size: 0.8rem;
+}

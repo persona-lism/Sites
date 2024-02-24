@@ -183,3 +183,10 @@ body.dark-mode #third-section .third-section-description-strength,
 body.dark-mode #third-section .third-section-description-weakness {
   background: linear-gradient(to bottom, #5e5e87, #3a3a52);
 }
+
+/* Studies Page */
+body.dark-mode .first-content > h1,
+body.dark-mode .second-content > h1,
+body.dark-mode .third-content > h1 {
+  color: #fff;
+}
