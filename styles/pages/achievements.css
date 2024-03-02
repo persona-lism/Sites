@@ -1,0 +1,13 @@
+.achievement-main > h1 {
+	color: #fff;
+}
+
+.achievement-main {
+	width: 80%;
+	margin: auto;
+	border: 1px white solid;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
