@@ -1,88 +1,88 @@
 /* Hamburger Menu */
 .hamburger-menu {
-  display: none;
+	display: none;
 }
 
 /* index.html */
 .first-section > h1,
 .second-section > h1,
 .third-section > h1 {
-  font-size: 3.5rem;
+	font-size: 3.5rem;
 }
 
 .first-section > p,
 .second-section > p,
 .third-section > p {
-  font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
 body > main > .second-section {
-  padding: 1rem 4rem;
+	padding: 1rem 4rem;
 }
 
 .first-section > .picture,
 .second-section > .picture {
-  width: 200px;
+	width: 200px;
 }
 
 .third-section-description {
-  width: 70%;
-  column-gap: 1.2rem;
-  margin-top: 1.2rem;
+	width: 70%;
+	column-gap: 1.2rem;
+	margin-top: 1.2rem;
 }
 
 .third-section-description-strength,
 .third-section-description-weakness {
-  padding: 1.5rem 2rem 4.5rem 2rem;
+	padding: 1.5rem 2rem 4.5rem 2rem;
 }
 
 .third-section-description-strength > p:first-child,
 .third-section-description-weakness > p:first-child {
-  font-size: 1.7rem;
+	font-size: 1.7rem;
 }
 
 .third-section-description-strength > ul,
 .third-section-description-weakness > ul {
-  font-size: 1.3rem;
-  margin: 1rem 0 0 0;
+	font-size: 1.3rem;
+	margin: 1rem 0 0 0;
 }
 
 .third-section-description-strength > ul > li,
 .third-section-description-weakness > ul > li {
-  margin: 0.3rem 0;
+	margin: 0.3rem 0;
 }
 
 /* Footer */
 footer {
-  margin-top: 4rem;
-  padding: 5rem 1.5rem;
+	margin-top: 4rem;
+	padding: 5rem 1.5rem;
 }
 
 .footer-social {
-  gap: 2rem;
+	gap: 2rem;
 }
 
-.footer-social > li > i {
-  font-size: 2.7rem;
+.footer-social > li > a > i {
+	font-size: 2.7rem;
 }
 
-.footer-social > li:hover {
-  margin-top: -1.7rem;
+.footer-social > li > a:hover {
+	margin-top: -1.7rem;
 }
 
 .footer-menu {
-  gap: 1.7rem;
+	gap: 1.7rem;
 }
 
 .footer-menu > li {
-  font-size: 1.7rem;
+	font-size: 1.7rem;
 }
 
 footer > p {
-  font-size: 1.3rem;
-  margin-top: 1rem;
+	font-size: 1.3rem;
+	margin-top: 1rem;
 }
 
 footer {
-  height: 50vh;
+	height: 50vh;
 }
