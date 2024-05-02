@@ -106,6 +106,10 @@ footer {
 	padding: 0.5rem 1.5rem;
 }
 
+.new-sec {
+	font-size: 1.8rem;
+}
+
 .first-content > h1,
 .second-content > h1,
 .third-content > h1 {

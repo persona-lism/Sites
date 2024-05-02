@@ -86,3 +86,8 @@ footer > p {
 footer {
 	height: 50vh;
 }
+
+/* Studies page */
+.new-sec {
+	font-size: 2rem;
+}
