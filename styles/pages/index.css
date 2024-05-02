@@ -202,9 +202,10 @@ section .animateOnScroll {
 
 	51%,
 	100% {
-		background: url("https://i.pinimg.com/originals/a3/f7/bc/a3f7bc433851a324c97bfc7f933a71a9.jpg");
-		background-size: contain;
-		object-fit: contain;
+		/* background: url("https://i.pinimg.com/originals/a3/f7/bc/a3f7bc433851a324c97bfc7f933a71a9.jpg"); */
+		background: url(/assets/svg/img.jpg);
+		background-size: cover;
+		object-fit: cover;
 		background-position: center;
 	}
 
